@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>7</revision>
+      <revision>9</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -37,7 +37,7 @@
       </input>
     </math>
   </region>
-  <region id="1" left="63" top="90" width="1083" height="958" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="1" left="63" top="90" width="1083" height="884" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">inp</e>
@@ -177,26 +177,9 @@
         <e type="operator" args="2">:</e>
         <e type="operand" style="string">Keep going until we have destroyed all the klingons or we run out of </e>
         <e type="operand" style="string">energy or we quit</e>
-        <e type="operand">klingons</e>
-        <e type="operand">0</e>
-        <e type="operator" args="2">&gt;</e>
-        <e type="bracket">(</e>
-        <e type="operand">energy</e>
-        <e type="operand">0</e>
-        <e type="operator" args="2">&gt;</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">&amp;</e>
-        <e type="operand">#</e>
-        <e type="function" args="2">while</e>
+        <e type="operand" style="string">while</e>
         <e type="operand" style="string">linea 155</e>
-        <e type="operand">klingons</e>
-        <e type="operand">0</e>
-        <e type="operator" args="2">≡</e>
-        <e type="operand">#</e>
-        <e type="function" args="1">promotion</e>
-        <e type="operand">#</e>
-        <e type="function" args="1">lose</e>
-        <e type="function" args="3">if</e>
+        <e type="operand">condition</e>
         <e type="operand">28</e>
         <e type="operand">1</e>
         <e type="function" args="30">line</e>
@@ -394,7 +377,7 @@
       </input>
     </math>
   </region>
-  <region id="5" left="72" top="2322" width="608" height="616" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="5" left="72" top="2322" width="654" height="626" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">current_sector</e>
@@ -402,6 +385,9 @@
         <e type="function" args="2">srs</e>
         <e type="operand">kli</e>
         <e type="operand">0</e>
+        <e type="operator" args="2">:</e>
+        <e type="operand">j</e>
+        <e type="operand">1</e>
         <e type="operator" args="2">:</e>
         <e type="operand">i</e>
         <e type="operand">1</e>
@@ -415,33 +401,47 @@
         <e type="operand">kli</e>
         <e type="operand">1</e>
         <e type="operator" args="2">:</e>
+        <e type="operand">this_sector</e>
+        <e type="operand">j</e>
+        <e type="function" args="2">el</e>
         <e type="operand" style="string">&gt;!&lt;</e>
+        <e type="operator" args="2">:</e>
         <e type="operand">2</e>
         <e type="operand">1</e>
         <e type="function" args="4">line</e>
+        <e type="operand">this_sector</e>
+        <e type="operand">j</e>
+        <e type="function" args="2">el</e>
+        <e type="operand" style="string"> . </e>
         <e type="operand">current_sector</e>
         <e type="operand">i</e>
         <e type="function" args="2">el</e>
         <e type="operand">0</e>
         <e type="operator" args="2">≡</e>
-        <e type="operand" style="string">  .  </e>
+        <e type="operand" style="string">&lt;o&gt;</e>
         <e type="operand">current_sector</e>
         <e type="operand">i</e>
         <e type="function" args="2">el</e>
         <e type="operand">2</e>
         <e type="operator" args="2">≡</e>
-        <e type="operand" style="string">&lt;0&gt;</e>
+        <e type="operand" style="string"> * </e>
         <e type="operand">current_sector</e>
         <e type="operand">i</e>
         <e type="function" args="2">el</e>
         <e type="operand">3</e>
         <e type="operator" args="2">≡</e>
-        <e type="operand" style="string"> * </e>
         <e type="operand" style="string">-O-</e>
+        <e type="function" args="7">cases</e>
+        <e type="operator" args="2">:</e>
         <e type="function" args="3">if</e>
-        <e type="function" args="3">if</e>
-        <e type="function" args="3">if</e>
-        <e type="function" args="3">if</e>
+        <e type="operand">j</e>
+        <e type="operand">j</e>
+        <e type="operand">1</e>
+        <e type="operator" args="2">+</e>
+        <e type="operator" args="2">:</e>
+        <e type="operand">2</e>
+        <e type="operand">1</e>
+        <e type="function" args="4">line</e>
         <e type="function" args="3">for</e>
         <e type="operand">kli</e>
         <e type="operand">0</e>
@@ -494,10 +494,20 @@
         <e type="operand" style="string" />
         <e type="function" args="3">if</e>
         <e type="function" args="3">if</e>
+        <e type="operand">this_sector</e>
+        <e type="operand">this_sector</e>
+        <e type="operand">8</e>
+        <e type="operand">8</e>
+        <e type="function" args="3">shape</e>
+        <e type="operator" args="2">:</e>
+        <e type="operand">this_sector</e>
         <e type="operand">condition</e>
-        <e type="operand">7</e>
+        <e type="operand">2</e>
         <e type="operand">1</e>
-        <e type="function" args="9">line</e>
+        <e type="function" args="4">mat</e>
+        <e type="operand">9</e>
+        <e type="operand">1</e>
+        <e type="function" args="11">line</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
@@ -544,14 +554,64 @@
       </input>
     </math>
   </region>
-  <region id="7" left="81" top="3348" width="42" height="38" color="#000000" bgColor="#ffffff" fontSize="10">
-    <table error="0" id="1" elementsOnDataSizeChange="10,10" focus="0,0;0,0" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
+  <region id="7" left="45" top="3222" width="272" height="166" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">m</e>
+        <e type="operand">f</e>
+        <e type="operand">c</e>
+        <e type="function" args="3">shape</e>
+        <e type="operand">mt</e>
+        <e type="operand">f</e>
+        <e type="operand">c</e>
+        <e type="function" args="2">matrix</e>
+        <e type="operator" args="2">:</e>
+        <e type="operand">k</e>
+        <e type="operand">1</e>
+        <e type="operator" args="2">:</e>
+        <e type="operand">i</e>
+        <e type="operand">1</e>
+        <e type="operand">f</e>
+        <e type="function" args="2">range</e>
+        <e type="operand">j</e>
+        <e type="operand">1</e>
+        <e type="operand">c</e>
+        <e type="function" args="2">range</e>
+        <e type="operand">mt</e>
+        <e type="operand">i</e>
+        <e type="operand">j</e>
+        <e type="function" args="3">el</e>
+        <e type="operand">m</e>
+        <e type="operand">k</e>
+        <e type="function" args="2">el</e>
+        <e type="operator" args="2">:</e>
+        <e type="operand">k</e>
+        <e type="operand">k</e>
+        <e type="operand">1</e>
+        <e type="operator" args="2">+</e>
+        <e type="operator" args="2">:</e>
+        <e type="operand">2</e>
+        <e type="operand">1</e>
+        <e type="function" args="4">line</e>
+        <e type="function" args="3">for</e>
+        <e type="function" args="3">for</e>
+        <e type="operand">mt</e>
+        <e type="operand">4</e>
+        <e type="operand">1</e>
+        <e type="function" args="6">line</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="8" left="81" top="3411" width="355" height="393" color="#000000" bgColor="#ffffff" fontSize="10">
+    <table id="1" elementsOnDataSizeChange="10,10" focus="0,0;0,1" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
       <inputs>
-        <e regions="columns">status</e>
+        <e regions="columns">shape</e>
         <e regions="columns">srs</e>
         <e regions="columns">init</e>
         <e regions="columns">decode</e>
         <e regions="columns">computer</e>
+        <e regions="rows">shape</e>
         <e regions="rows">status</e>
         <e regions="rows">srs</e>
         <e regions="rows">init</e>
@@ -559,9 +619,12 @@
         <e regions="rows">computer</e>
       </inputs>
       <regions header="False" lstub="False" units="False,Top" rstub="False" footer="False" footnote="False" caption="False,Bottom">
-        <body rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,White,#E1E1E1,Black" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+        <body rows="2" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10.5pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,White,#E1E1E1,Black" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
-            <td>#</td>
+            <td>mat(" . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," · "," . "," . "," . "," . "," . "," . "," · "," . "," . "," . "," . "," . "," . "," . "," · "," . "," . "," . "," . "," . "," . "," . "," . "," · "," . "," . "," . "," . "," . "," . ","-O-"," . "," . "," . "," . "," . "," . "," . "," . "," . ",8,8)</td>
+          </tr>
+          <tr>
+            <td>Green</td>
           </tr>
         </body>
         <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,White,#E1E1E1,Black" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
