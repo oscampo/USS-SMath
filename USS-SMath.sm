@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>9</revision>
+      <revision>17</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -23,12 +23,12 @@
     </pageModel>
     <dependencies>
       <assembly name="SMath Studio Desktop" version="0.99.6671.38791" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
-      <assembly name="Math Region" version="0.99.6671.38791" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
       <assembly name="Text Region" version="1.10.6671.38794" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="Area Region" version="0.99.6671.38791" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
       <assembly name="Table Region" version="0.2.6638.24147" guid="51fec712-ec75-4551-a13e-478d375ae8d6" />
     </dependencies>
   </settings>
-  <region id="0" left="63" top="18" width="182" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="0" left="63" top="18" width="182" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">second_coefficient</e>
@@ -37,10 +37,10 @@
       </input>
     </math>
   </region>
-  <region id="1" left="63" top="90" width="1083" height="884" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="1" left="63" top="90" width="1099" height="924" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">inp</e>
+        <e type="operand">input</e>
         <e type="function" args="1">computer</e>
         <e type="operand" style="string">Setup a random stardate</e>
         <e type="operand">stardate</e>
@@ -88,7 +88,7 @@
         <e type="operand">1</e>
         <e type="operand">10</e>
         <e type="function" args="2">Random.N</e>
-        <e type="operand">8</e>
+        <e type="operand">4</e>
         <e type="operator" args="2">&lt;</e>
         <e type="operand">x</e>
         <e type="operand">1</e>
@@ -148,7 +148,9 @@
         <e type="operand" style="string">Set up current sector and decode it </e>
         <e type="operand" style="string">x = klingons; y = starbases; z = stars</e>
         <e type="operand">sctr</e>
+        <e type="operand">galaxy</e>
         <e type="operand">sector</e>
+        <e type="function" args="2">el</e>
         <e type="function" args="1">decode</e>
         <e type="operator" args="2">:</e>
         <e type="operand" style="string">Set up the current sector map</e>
@@ -179,10 +181,36 @@
         <e type="operand" style="string">energy or we quit</e>
         <e type="operand" style="string">while</e>
         <e type="operand" style="string">linea 155</e>
+        <e type="operand">output</e>
         <e type="operand">condition</e>
-        <e type="operand">28</e>
         <e type="operand">1</e>
-        <e type="function" args="30">line</e>
+        <e type="function" args="2">el</e>
+        <e type="operand">input</e>
+        <e type="function" args="1">strtoupper</e>
+        <e type="operand" style="string">SRS</e>
+        <e type="operator" args="2">≡</e>
+        <e type="operand">galaxy</e>
+        <e type="operand">8</e>
+        <e type="operand">8</e>
+        <e type="function" args="3">shape</e>
+        <e type="operand">input</e>
+        <e type="function" args="1">strtoupper</e>
+        <e type="operand" style="string">LRS</e>
+        <e type="operator" args="2">≡</e>
+        <e type="operand">stat</e>
+        <e type="operand">input</e>
+        <e type="function" args="1">strtoupper</e>
+        <e type="operand" style="string">ST</e>
+        <e type="operator" args="2">≡</e>
+        <e type="operand">condition</e>
+        <e type="operand">2</e>
+        <e type="function" args="2">el</e>
+        <e type="function" args="7">cases</e>
+        <e type="operator" args="2">:</e>
+        <e type="operand">output</e>
+        <e type="operand">29</e>
+        <e type="operand">1</e>
+        <e type="function" args="31">line</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
@@ -192,20 +220,20 @@
       <p />
     </text>
   </region>
-  <region id="3" left="54" top="1116" width="449" height="173" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="3" left="54" top="1116" width="401" height="158" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">sctr</e>
         <e type="function" args="1">decode</e>
-        <e type="operand">klingons</e>
+        <e type="operand">klin</e>
         <e type="operand">sctr</e>
         <e type="operand">100</e>
         <e type="operator" args="2">/</e>
         <e type="function" args="1">trunc</e>
         <e type="operator" args="2">:</e>
-        <e type="operand">starbases</e>
+        <e type="operand">strbases</e>
         <e type="operand">sctr</e>
-        <e type="operand">klingons</e>
+        <e type="operand">klin</e>
         <e type="operand">100</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">-</e>
@@ -213,20 +241,20 @@
         <e type="operator" args="2">/</e>
         <e type="function" args="1">trunc</e>
         <e type="operator" args="2">:</e>
-        <e type="operand">stars</e>
+        <e type="operand">strs</e>
         <e type="operand">sctr</e>
-        <e type="operand">klingons</e>
+        <e type="operand">klin</e>
         <e type="operand">100</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">-</e>
-        <e type="operand">starbases</e>
+        <e type="operand">strbases</e>
         <e type="operand">10</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">-</e>
         <e type="operator" args="2">:</e>
-        <e type="operand">klingons</e>
-        <e type="operand">starbases</e>
-        <e type="operand">stars</e>
+        <e type="operand">klin</e>
+        <e type="operand">strbases</e>
+        <e type="operand">strs</e>
         <e type="operand">3</e>
         <e type="operand">1</e>
         <e type="function" args="5">mat</e>
@@ -237,23 +265,23 @@
       </input>
     </math>
   </region>
-  <region id="4" left="63" top="1467" width="785" height="737" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="4" left="63" top="1467" width="785" height="671" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">secVector</e>
         <e type="operand">eposition</e>
         <e type="function" args="2">init</e>
-        <e type="operand">klingons</e>
+        <e type="operand">klin</e>
         <e type="operand">secVector</e>
         <e type="operand">1</e>
         <e type="function" args="2">el</e>
         <e type="operator" args="2">:</e>
-        <e type="operand">bases</e>
+        <e type="operand">bses</e>
         <e type="operand">secVector</e>
         <e type="operand">2</e>
         <e type="function" args="2">el</e>
         <e type="operator" args="2">:</e>
-        <e type="operand">stars</e>
+        <e type="operand">strs</e>
         <e type="operand">secVector</e>
         <e type="operand">3</e>
         <e type="function" args="2">el</e>
@@ -269,7 +297,7 @@
         <e type="operand">4</e>
         <e type="operator" args="2">:</e>
         <e type="operand" style="string">Add in the stars </e>
-        <e type="operand">stars</e>
+        <e type="operand">strs</e>
         <e type="operand">0</e>
         <e type="operator" args="2">&gt;</e>
         <e type="operand">position</e>
@@ -287,8 +315,8 @@
         <e type="function" args="2">el</e>
         <e type="operand">3</e>
         <e type="operator" args="2">:</e>
-        <e type="operand">stars</e>
-        <e type="operand">stars</e>
+        <e type="operand">strs</e>
+        <e type="operand">strs</e>
         <e type="operand">1</e>
         <e type="operator" args="2">-</e>
         <e type="operator" args="2">:</e>
@@ -302,7 +330,7 @@
         <e type="function" args="4">line</e>
         <e type="function" args="2">while</e>
         <e type="operand" style="string">Add in the starbases </e>
-        <e type="operand">klingons</e>
+        <e type="operand">bses</e>
         <e type="operand">0</e>
         <e type="operator" args="2">&gt;</e>
         <e type="operand">position</e>
@@ -319,10 +347,9 @@
         <e type="operand">position</e>
         <e type="function" args="2">el</e>
         <e type="operand">2</e>
-        <e type="operator" args="1">-</e>
         <e type="operator" args="2">:</e>
-        <e type="operand">bases</e>
-        <e type="operand">bases</e>
+        <e type="operand">bses</e>
+        <e type="operand">bses</e>
         <e type="operand">1</e>
         <e type="operator" args="2">-</e>
         <e type="operator" args="2">:</e>
@@ -336,7 +363,7 @@
         <e type="function" args="4">line</e>
         <e type="function" args="2">while</e>
         <e type="operand" style="string">Add in the klingons </e>
-        <e type="operand">klingons</e>
+        <e type="operand">klin</e>
         <e type="operand">0</e>
         <e type="operator" args="2">&gt;</e>
         <e type="operand">position</e>
@@ -355,8 +382,8 @@
         <e type="operand">200</e>
         <e type="operator" args="1">-</e>
         <e type="operator" args="2">:</e>
-        <e type="operand">klingons</e>
-        <e type="operand">klingons</e>
+        <e type="operand">klin</e>
+        <e type="operand">klin</e>
         <e type="operand">1</e>
         <e type="operator" args="2">-</e>
         <e type="operator" args="2">:</e>
@@ -377,7 +404,7 @@
       </input>
     </math>
   </region>
-  <region id="5" left="72" top="2322" width="654" height="626" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="5" left="72" top="2322" width="654" height="570" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">current_sector</e>
@@ -424,7 +451,7 @@
         <e type="function" args="2">el</e>
         <e type="operand">2</e>
         <e type="operator" args="2">≡</e>
-        <e type="operand" style="string"> * </e>
+        <e type="operand" style="string"> ☼ </e>
         <e type="operand">current_sector</e>
         <e type="operand">i</e>
         <e type="function" args="2">el</e>
@@ -447,10 +474,10 @@
         <e type="operand">0</e>
         <e type="operator" args="2">≡</e>
         <e type="operand">condition</e>
-        <e type="operand" style="string">Green</e>
+        <e type="operand" style="string">GREEN</e>
         <e type="operator" args="2">:</e>
         <e type="operand">condition</e>
-        <e type="operand" style="string">Red</e>
+        <e type="operand" style="string">RED</e>
         <e type="operator" args="2">:</e>
         <e type="function" args="3">if</e>
         <e type="operand">port</e>
@@ -475,7 +502,7 @@
         <e type="bracket">(</e>
         <e type="operator" args="2">&amp;</e>
         <e type="operand">condition</e>
-        <e type="operand" style="string">Docked</e>
+        <e type="operand" style="string">DOCKED</e>
         <e type="operator" args="2">:</e>
         <e type="operand">starboard</e>
         <e type="operand">64</e>
@@ -489,7 +516,7 @@
         <e type="bracket">(</e>
         <e type="operator" args="2">&amp;</e>
         <e type="operand">condition</e>
-        <e type="operand" style="string">Docked</e>
+        <e type="operand" style="string">DOCKED</e>
         <e type="operator" args="2">:</e>
         <e type="operand" style="string" />
         <e type="function" args="3">if</e>
@@ -512,7 +539,7 @@
       </input>
     </math>
   </region>
-  <region id="6" left="36" top="2970" width="1017" height="153" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="6" left="36" top="2970" width="1049" height="150" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">sector</e>
@@ -523,27 +550,29 @@
         <e type="operand">shields</e>
         <e type="operand">klingons</e>
         <e type="function" args="7">status</e>
-        <e type="operand" style="string">Stardate:    </e>
+        <e type="operand" style="string">STARDATE:    </e>
         <e type="operand">stardate</e>
         <e type="function" args="1">num2str</e>
         <e type="function" args="2">concat</e>
-        <e type="operand" style="string">Condition:    </e>
+        <e type="operand" style="string">CONDITION:    </e>
         <e type="operand">condition</e>
+        <e type="operand">2</e>
+        <e type="function" args="2">el</e>
         <e type="function" args="1">num2str</e>
         <e type="function" args="2">concat</e>
-        <e type="operand" style="string">Energy:    </e>
+        <e type="operand" style="string">ENERGY:    </e>
         <e type="operand">energy</e>
         <e type="function" args="1">num2str</e>
         <e type="function" args="2">concat</e>
-        <e type="operand" style="string">Photon Torpedoes:    </e>
+        <e type="operand" style="string">PHOTON TORPEDOES:    </e>
         <e type="operand">torpedoes</e>
         <e type="function" args="1">num2str</e>
         <e type="function" args="2">concat</e>
-        <e type="operand" style="string">Shields:    </e>
+        <e type="operand" style="string">SHIELDS:    </e>
         <e type="operand">shields</e>
         <e type="function" args="1">num2str</e>
         <e type="function" args="2">concat</e>
-        <e type="operand" style="string">Klingons in galaxy:    </e>
+        <e type="operand" style="string">KLINGONS IN THE GALAXY:    </e>
         <e type="operand">klingons</e>
         <e type="function" args="1">num2str</e>
         <e type="function" args="2">concat</e>
@@ -554,7 +583,7 @@
       </input>
     </math>
   </region>
-  <region id="7" left="45" top="3222" width="272" height="166" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="7" left="45" top="3222" width="272" height="149" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">m</e>
@@ -603,8 +632,8 @@
       </input>
     </math>
   </region>
-  <region id="8" left="81" top="3411" width="355" height="393" color="#000000" bgColor="#ffffff" fontSize="10">
-    <table id="1" elementsOnDataSizeChange="10,10" focus="0,0;0,1" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
+  <region id="8" left="36" top="3456" width="667" height="329" color="#000000" bgColor="#ffffff" fontSize="10">
+    <table id="1" elementsOnDataSizeChange="10,10" focus="0,0;7,7" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
       <inputs>
         <e regions="columns">shape</e>
         <e regions="columns">srs</e>
@@ -619,12 +648,157 @@
         <e regions="rows">computer</e>
       </inputs>
       <regions header="False" lstub="False" units="False,Top" rstub="False" footer="False" footnote="False" caption="False,Bottom">
-        <body rows="2" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10.5pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,White,#E1E1E1,Black" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+        <body rows="8" cols="8" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#FFFF80,#FFFF80" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 20.25pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
-            <td>mat(" . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," · "," . "," . "," . "," . "," . "," . "," · "," . "," . "," . "," . "," . "," . "," . "," · "," . "," . "," . "," . "," . "," . "," . "," . "," · "," . "," . "," . "," . "," . "," . ","-O-"," . "," . "," . "," . "," . "," . "," . "," . "," . ",8,8)</td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td>&gt;!&lt;</td>
+            <td> . </td>
           </tr>
           <tr>
-            <td>Green</td>
+            <td> . </td>
+            <td> . </td>
+            <td>&lt;o&gt;</td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+          </tr>
+          <tr>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+          </tr>
+          <tr>
+            <td> . </td>
+            <td> . </td>
+            <td>-O-</td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+          </tr>
+          <tr>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+          </tr>
+          <tr>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+          </tr>
+          <tr>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> ☼ </td>
+            <td> . </td>
+            <td> . </td>
+          </tr>
+          <tr>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+            <td> . </td>
+          </tr>
+        </body>
+        <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+          <tr>
+            <td>#</td>
+          </tr>
+        </units>
+        <header input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+          <tr>
+            <td>#</td>
+          </tr>
+        </header>
+        <lstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+          <tr>
+            <td>#</td>
+          </tr>
+        </lstub>
+        <rstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+          <tr>
+            <td>#</td>
+          </tr>
+        </rstub>
+        <footer input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+          <tr>
+            <td>#</td>
+          </tr>
+        </footer>
+        <footnote align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="Black" bgColor="White" font="Courier New, 7.5pt" text="NOTE" />
+        <caption align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="Black" bgColor="White" font="Courier New, 10pt" text="Table %T" />
+      </regions>
+      <input>
+        <e type="operand" style="string">srs</e>
+        <e type="function" args="1">computer</e>
+      </input>
+    </table>
+  </region>
+  <region id="9" left="711" top="3456" width="272" height="189" color="#000000" bgColor="#ffffff" fontSize="10">
+    <table id="2" elementsOnDataSizeChange="10,10" focus="0,0;0,5" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
+      <inputs>
+        <e regions="columns">shape</e>
+        <e regions="columns">status</e>
+        <e regions="columns">srs</e>
+        <e regions="columns">init</e>
+        <e regions="columns">decode</e>
+        <e regions="columns">computer</e>
+        <e regions="rows">shape</e>
+        <e regions="rows">status</e>
+        <e regions="rows">srs</e>
+        <e regions="rows">init</e>
+        <e regions="rows">decode</e>
+        <e regions="rows">computer</e>
+      </inputs>
+      <regions header="False" lstub="False" units="False,Top" rstub="False" footer="False" footnote="False" caption="False,Bottom">
+        <body rows="6" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FFFF" bgColor="Black,Black" style="Chess" styleEffects="None" font="DS ISO 1, 11.9999981pt, style=Bold" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,White,#E1E1E1,Black" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+          <tr>
+            <td>STARDATE:    1183</td>
+          </tr>
+          <tr>
+            <td>CONDITION:    GREEN</td>
+          </tr>
+          <tr>
+            <td>ENERGY:    3000</td>
+          </tr>
+          <tr>
+            <td>PHOTON TORPEDOES:    15</td>
+          </tr>
+          <tr>
+            <td>SHIELDS:    0</td>
+          </tr>
+          <tr>
+            <td>KLINGONS IN THE GALAXY:    48</td>
           </tr>
         </body>
         <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,White,#E1E1E1,Black" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
@@ -656,7 +830,7 @@
         <caption align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="Black" bgColor="White" font="Courier New, 10pt" text="Table %T" />
       </regions>
       <input>
-        <e type="operand">2</e>
+        <e type="operand" style="string">st</e>
         <e type="function" args="1">computer</e>
       </input>
     </table>
