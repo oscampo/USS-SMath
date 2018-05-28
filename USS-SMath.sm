@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>28</revision>
+      <revision>30</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -29,12 +29,12 @@
     </dependencies>
   </settings>
   <region id="0" top="9" color="#000000" bgColor="#ffffff">
-    <area collapsed="true">
+    <area collapsed="false">
       <title lang="spa">
         <p>Main</p>
       </title>
     </area>
-    <region id="1" left="135" top="72" width="182" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="1" left="135" top="72" width="182" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">second_coefficient</e>
@@ -43,7 +43,7 @@
         </input>
       </math>
     </region>
-    <region id="2" left="135" top="144" width="1297" height="1552" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="2" left="135" top="144" width="1297" height="1497" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">input</e>
@@ -204,10 +204,26 @@
           <e type="bracket">(</e>
           <e type="operand">input</e>
           <e type="function" args="1">strtoupper</e>
-          <e type="operand" style="string">?</e>
+          <e type="operand" style="string">H</e>
           <e type="operator" args="2">≡</e>
           <e type="bracket">(</e>
           <e type="operator" args="2">|</e>
+          <e type="operand">rawc</e>
+          <e type="operand">input</e>
+          <e type="operand" style="string">:</e>
+          <e type="function" args="2">strsplit</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">rawc</e>
+          <e type="operand">rawc</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operand" style="string">.</e>
+          <e type="function" args="2">strsplit</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">coord</e>
+          <e type="operand">rawc</e>
+          <e type="function" args="1">str2num</e>
+          <e type="operator" args="2">:</e>
           <e type="operand">new</e>
           <e type="operand">galaxy</e>
           <e type="operand">sector</e>
@@ -300,17 +316,17 @@
           <e type="operand">klingons</e>
           <e type="function" args="7">status</e>
           <e type="operator" args="2">:</e>
-          <e type="operand">9</e>
+          <e type="operand">12</e>
           <e type="operand">1</e>
-          <e type="function" args="11">line</e>
+          <e type="function" args="14">line</e>
           <e type="operand">input</e>
           <e type="function" args="1">strtoupper</e>
-          <e type="operand" style="string">HELM</e>
+          <e type="operand" style="string">NAV</e>
           <e type="operator" args="2">≡</e>
           <e type="bracket">(</e>
           <e type="operand">input</e>
           <e type="function" args="1">strtoupper</e>
-          <e type="operand" style="string">H</e>
+          <e type="operand" style="string">N</e>
           <e type="operator" args="2">≡</e>
           <e type="bracket">(</e>
           <e type="operator" args="2">|</e>
@@ -376,7 +392,7 @@
           <e type="operator" args="2">≡</e>
           <e type="bracket">(</e>
           <e type="operator" args="2">|</e>
-          <e type="operand" style="string">NOT IMPLEMENTED YET</e>
+          <e type="operand" style="string">Command not recognised, Sir</e>
           <e type="function" args="15">cases</e>
           <e type="operand">2</e>
           <e type="operand">1</e>
@@ -405,7 +421,7 @@
         <p>Functions</p>
       </title>
     </area>
-    <region id="6" left="54" top="1881" width="401" height="173" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="6" left="54" top="1881" width="401" height="158" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">sctr</e>
@@ -450,7 +466,7 @@
         </input>
       </math>
     </region>
-    <region id="7" left="27" top="2088" width="785" height="737" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="7" left="27" top="2088" width="785" height="671" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">secVector</e>
@@ -589,7 +605,7 @@
         </input>
       </math>
     </region>
-    <region id="8" left="954" top="2088" width="654" height="626" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="8" left="954" top="2088" width="654" height="570" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">current_sector</e>
@@ -642,7 +658,7 @@
           <e type="function" args="2">el</e>
           <e type="operand">3</e>
           <e type="operator" args="2">≡</e>
-          <e type="operand" style="string">]-O</e>
+          <e type="operand" style="string">ΞO</e>
           <e type="function" args="7">cases</e>
           <e type="operator" args="2">:</e>
           <e type="function" args="3">if</e>
@@ -724,7 +740,7 @@
         </input>
       </math>
     </region>
-    <region id="9" left="45" top="2889" width="1049" height="163" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="9" left="45" top="2889" width="1049" height="150" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">sector</e>
@@ -768,7 +784,7 @@
         </input>
       </math>
     </region>
-    <region id="10" left="45" top="3087" width="272" height="166" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="10" left="45" top="3087" width="272" height="149" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">m</e>
@@ -817,14 +833,16 @@
         </input>
       </math>
     </region>
-    <region id="11" left="405" top="3087" width="423" height="145" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="11" left="405" top="3087" width="519" height="156" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">h</e>
           <e type="function" args="1">showhelp</e>
           <e type="operand" style="string">USS-SMath Help</e>
-          <e type="operand" style="string">H or HELM</e>
-          <e type="operand" style="string">Helm</e>
+          <e type="operand" style="string">N:XX.YY or NAV:XX.YY</e>
+          <e type="operand" style="string">Navigate to</e>
+          <e type="operand" style="string" />
+          <e type="operand" style="string">Quadrant XX, Sector YY</e>
           <e type="operand" style="string">LRS or LRSCAN</e>
           <e type="operand" style="string">Long Range Scan</e>
           <e type="operand" style="string">P or PHASERS</e>
@@ -835,9 +853,9 @@
           <e type="operand" style="string">Shields</e>
           <e type="operand" style="string">R or RESIGN</e>
           <e type="operand" style="string">Resign</e>
-          <e type="operand">6</e>
+          <e type="operand">7</e>
           <e type="operand">2</e>
-          <e type="function" args="14">mat</e>
+          <e type="function" args="16">mat</e>
           <e type="operand">2</e>
           <e type="operand">1</e>
           <e type="function" args="4">mat</e>
@@ -849,7 +867,7 @@
       <area terminator="true" />
     </region>
   </region>
-  <region id="13" left="27" top="3321" width="651" height="601" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="13" left="27" top="3321" width="627" height="423" color="#000000" bgColor="#ffffff" fontSize="10">
     <table id="1" elementsOnDataSizeChange="10,10" focus="0,0;0,1" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
       <inputs>
         <e regions="columns">showhelp</e>
@@ -867,15 +885,15 @@
         <e regions="rows">command</e>
       </inputs>
       <regions header="False" lstub="False" units="False,Top" rstub="False" footer="False" footnote="False" caption="False,Bottom">
-        <body rows="2" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#FFFF80,#FFFF80" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 20.25pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+        <body rows="2" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#FFFF80,#FFFF80" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Arial Unicode MS, 20.25pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
-            <td>mat(" ☼ ","]-O"," . "," ☼ "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," ☼ "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," ☼ "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," ☼ "," . ",8,8)</td>
+            <td>mat(" . "," . ","&lt;o&gt;"," . "," . "," . "," . "," . "," . "," . "," . ","&gt;!&lt;"," . "," . "," . "," . "," . "," . "," . "," . "," ☼ "," . "," . "," . "," . "," . "," . "," . "," ☼ "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . "," . ","&gt;!&lt;"," . "," . "," . "," . "," . "," . "," . "," . ","ΞO"," . "," . "," . "," . "," . "," . "," . "," . "," . ",8,8)</td>
           </tr>
           <tr>
-            <td>GREEN</td>
+            <td>RED</td>
           </tr>
         </body>
-        <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+        <units input="" rows="1" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
             <td>#</td>
           </tr>
@@ -885,12 +903,12 @@
             <td>#</td>
           </tr>
         </header>
-        <lstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+        <lstub input="" rows="1" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
             <td>#</td>
           </tr>
         </lstub>
-        <rstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+        <rstub input="" rows="1" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
             <td>#</td>
           </tr>
