@@ -1,8 +1,29 @@
-"Space ... the final frontier.
+"
+__________________           __
+\_________________|)____.---'--`---.____
+              ||    \----.________.----/
+              ||     / /    `--'
+            __||____/ /_
+           |___         \
+               `--------'
+
+Space ... the final frontier.
 
 These are the voyages of the starship Enterprise
-Its five year mission ..."
+Its five year mission ...
 ... to boldly go where no-one has gone before
 
 You are Captain Kirk.
-Your mission is to destroy all of the Klingons in the galaxy."
+Your mission is to destroy all of the Klingons in the galaxy.
+
+Please Type your orders on command() prompt:
+
+N:XX.YY.Z or NAV:XX.YY.Z Navigate to Quadrant XX,
+                         Sector YY at Warp Z (1-9)
+
+SRS or SRSCAN            Short Range Scan
+LRS or LRSCAN            Long Range Scan
+P or PHASERS             Phasers
+T or TORPEDOES           Photon Torpedoes
+S or SHIELDS             Shields
+R or RESIGN              Resign"
