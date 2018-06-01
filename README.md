@@ -1,6 +1,7 @@
 # USS-SMath
 Attempt of implementation the old SST (Super Star Trek) game on SMath
 
+![Intro Image](USS-SMath/images/Captura1.PNG)
 
 [A little video](https://youtu.be/_ORFa9qW5J8)
 
