@@ -1,6 +1,8 @@
 # USS-SMath
 Attempt of implementation the old SST (Super Star Trek) game on SMath
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_ORFa9qW5J8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 Some links:
 
 - [The original source code in BASIC (1972), posted on AtariArchives.org](https://www.atariarchives.org/bcc1/showpage.php?page=275)
