@@ -1,5 +1,5 @@
 # USS-SMath
-Attempt of implementation the old SST (Super Star Trek) game on SMath
+Attempt of implementation the old SST (Super Star Trek) game on [SMath](https://en.smath.info/view/SMathStudio/summary)
 
 ![](https://github.com/oscampo/USS-SMath/blob/master/Captura1.PNG)
 
