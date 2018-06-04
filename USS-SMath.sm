@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>140</revision>
+      <revision>141</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -2570,7 +2570,7 @@
             <td>#</td>
           </tr>
         </footer>
-        <footnote align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="#80FF00" bgColor="Black" font="Courier New, 8.25pt" text="USS-SMath (c) Oscar Campo V0.235415417" />
+        <footnote align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="#80FF00" bgColor="Black" font="Courier New, 8.25pt" text="USS-SMath (c) Oscar Campo V0.25" />
         <caption align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="Black" bgColor="White" font="Courier New, 10pt" text="" />
       </regions>
       <input>
@@ -2618,11 +2618,11 @@
         <body rows="7" cols="2" align="Near" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Columns" styleEffects="None" font="Microsoft Sans Serif, 15.75pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
             <td>STARDATE</td>
-            <td>1370</td>
+            <td>1233</td>
           </tr>
           <tr>
             <td>SECTOR</td>
-            <td>7 4</td>
+            <td>3 3</td>
           </tr>
           <tr>
             <td>CONDITION</td>
@@ -2642,7 +2642,7 @@
           </tr>
           <tr>
             <td>KLINGONS LEFT</td>
-            <td>42</td>
+            <td>25</td>
           </tr>
         </body>
         <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
