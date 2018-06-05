@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>152</revision>
+      <revision>153</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -33,7 +33,7 @@
     </dependencies>
   </settings>
   <region id="0" top="9" color="#000000" bgColor="#ffffff">
-    <area collapsed="true">
+    <area collapsed="false">
       <title lang="spa">
         <p>Main</p>
       </title>
@@ -51,7 +51,30 @@
         </result>
       </math>
     </region>
-    <region id="2" left="135" top="90" width="108" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="2" left="135" top="90" width="209" height="99" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">data</e>
+          <e type="function" args="1">rfile</e>
+          <e type="operand" style="string" />
+          <e type="operator" args="2">≠</e>
+          <e type="operand" style="string">ok</e>
+          <e type="operand">dat</e>
+          <e type="operand">path</e>
+          <e type="operand">data</e>
+          <e type="function" args="2">rfile</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">dat</e>
+          <e type="operand">data</e>
+          <e type="function" args="2">wfile</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">line</e>
+          <e type="function" args="3">if</e>
+        </input>
+      </math>
+    </region>
+    <region id="3" left="135" top="207" width="108" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">vfil</e>
@@ -62,7 +85,7 @@
         </input>
       </math>
     </region>
-    <region id="3" left="135" top="117" width="108" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="4" left="135" top="234" width="108" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">hcol</e>
@@ -72,7 +95,7 @@
         </input>
       </math>
     </region>
-    <region id="4" left="135" top="162" width="257" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="5" left="135" top="279" width="257" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">knownGalaxy</e>
@@ -88,7 +111,7 @@
         </input>
       </math>
     </region>
-    <region id="5" left="135" top="198" width="1107" height="3611" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="6" left="135" top="315" width="1107" height="3611" color="#000000" bgColor="#ffffff" fontSize="10">
       <math optimize="2">
         <input>
           <e type="operand">input</e>
@@ -728,28 +751,28 @@
         </input>
       </math>
     </region>
-    <region id="6" left="90" top="288" width="9" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="7" left="90" top="405" width="9" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <text lang="spa">
         <p />
       </text>
     </region>
-    <region id="7" top="4122" color="#000000" bgColor="#ffffff">
+    <region id="8" top="4239" color="#000000" bgColor="#ffffff">
       <area terminator="true" />
     </region>
   </region>
-  <region id="8" top="4158" color="#000000" bgColor="#ffffff">
+  <region id="9" top="4275" color="#000000" bgColor="#ffffff">
     <area collapsed="true">
       <title lang="spa">
         <p>FUNCTIONS</p>
       </title>
     </area>
-    <region id="9" top="4212" color="#000000" bgColor="#ffffff">
+    <region id="10" top="4329" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>DECODE</p>
         </title>
       </area>
-      <region id="10" left="63" top="4275" width="385" height="158" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="11" left="63" top="4392" width="385" height="158" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">sct</e>
@@ -794,17 +817,17 @@
           </input>
         </math>
       </region>
-      <region id="11" top="4500" color="#000000" bgColor="#ffffff">
+      <region id="12" top="4617" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="12" top="4545" color="#000000" bgColor="#ffffff">
+    <region id="13" top="4662" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>INIT</p>
         </title>
       </area>
-      <region id="13" left="63" top="4590" width="785" height="671" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="14" left="63" top="4707" width="785" height="671" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">secVector</e>
@@ -943,17 +966,17 @@
           </input>
         </math>
       </region>
-      <region id="14" top="5400" color="#000000" bgColor="#ffffff">
+      <region id="15" top="5517" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="15" top="5454" color="#000000" bgColor="#ffffff">
+    <region id="16" top="5571" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>SRS</p>
         </title>
       </area>
-      <region id="16" left="36" top="5499" width="679" height="551" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="17" left="36" top="5616" width="679" height="551" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">current_sector</e>
@@ -1091,17 +1114,17 @@
           </input>
         </math>
       </region>
-      <region id="17" top="6282" color="#000000" bgColor="#ffffff">
+      <region id="18" top="6399" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="18" top="6327" color="#000000" bgColor="#ffffff">
+    <region id="19" top="6444" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>STATUS / SHAPE / SHOWHELP / POS2COORD</p>
         </title>
       </area>
-      <region id="19" left="36" top="6372" width="1334" height="86" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="20" left="36" top="6489" width="1334" height="86" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">sector</e>
@@ -1154,7 +1177,7 @@
           </input>
         </math>
       </region>
-      <region id="20" left="9" top="6489" width="502" height="132" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="21" left="9" top="6606" width="502" height="132" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">vec</e>
@@ -1215,7 +1238,7 @@
           </input>
         </math>
       </region>
-      <region id="21" left="27" top="6669" width="296" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="22" left="27" top="6786" width="296" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">h</e>
@@ -1227,7 +1250,7 @@
           </input>
         </math>
       </region>
-      <region id="22" left="27" top="6732" width="414" height="157" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="23" left="27" top="6849" width="414" height="157" color="#000000" bgColor="#ffffff" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">pos</e>
@@ -1273,17 +1296,17 @@
           </input>
         </math>
       </region>
-      <region id="23" top="6957" color="#000000" bgColor="#ffffff">
+      <region id="24" top="7074" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="24" top="7002" color="#000000" bgColor="#ffffff">
+    <region id="25" top="7119" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>NAVIGATE</p>
         </title>
       </area>
-      <region id="25" left="117" top="7056" width="1211" height="1716" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="26" left="117" top="7173" width="1211" height="1716" color="#000000" bgColor="#ffffff" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">galaxy</e>
@@ -1668,17 +1691,17 @@
           </input>
         </math>
       </region>
-      <region id="26" top="8937" color="#000000" bgColor="#ffffff">
+      <region id="27" top="9054" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="27" top="8991" color="#000000" bgColor="#ffffff">
+    <region id="28" top="9108" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>LRS</p>
         </title>
       </area>
-      <region id="28" left="90" top="9009" width="383" height="864" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="29" left="90" top="9126" width="383" height="864" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">gal</e>
@@ -1845,7 +1868,7 @@
           </input>
         </math>
       </region>
-      <region id="29" left="594" top="9009" width="213" height="141" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="30" left="594" top="9126" width="213" height="141" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">sect</e>
@@ -1875,17 +1898,17 @@
           </input>
         </math>
       </region>
-      <region id="30" top="9963" color="#000000" bgColor="#ffffff">
+      <region id="31" top="10080" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="31" top="10008" color="#000000" bgColor="#ffffff">
+    <region id="32" top="10125" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>SHIELDS</p>
         </title>
       </area>
-      <region id="32" left="108" top="10053" width="923" height="489" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="33" left="108" top="10170" width="923" height="489" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">energy</e>
@@ -1977,17 +2000,17 @@
           </input>
         </math>
       </region>
-      <region id="33" top="10548" color="#000000" bgColor="#ffffff">
+      <region id="34" top="10665" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="34" top="10593" color="#000000" bgColor="#ffffff">
+    <region id="35" top="10710" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>PHASERS</p>
         </title>
       </area>
-      <region id="35" left="108" top="10656" width="1144" height="2607" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="36" left="108" top="10773" width="1144" height="2607" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">cond</e>
@@ -2487,17 +2510,17 @@
           </input>
         </math>
       </region>
-      <region id="36" top="13500" color="#000000" bgColor="#ffffff">
+      <region id="37" top="13617" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="37" top="13545" color="#000000" bgColor="#ffffff">
+    <region id="38" top="13662" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>PHOTONTORPEDOES</p>
         </title>
       </area>
-      <region id="38" left="27" top="13581" width="1091" height="1388" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="39" left="27" top="13698" width="1091" height="1388" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">torpedoes</e>
@@ -2811,35 +2834,35 @@
           </input>
         </math>
       </region>
-      <region id="39" top="15138" color="#000000" bgColor="#ffffff">
+      <region id="40" top="15255" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="40" top="15165" color="#000000" bgColor="#ffffff">
+    <region id="41" top="15282" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>PROMOTION</p>
         </title>
       </area>
-      <region id="41" top="15399" color="#000000" bgColor="#ffffff">
+      <region id="42" top="15516" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="42" top="15435" color="#000000" bgColor="#ffffff">
+    <region id="43" top="15552" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>LOSE</p>
         </title>
       </area>
-      <region id="43" top="15669" color="#000000" bgColor="#ffffff">
+      <region id="44" top="15786" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="44" top="15687" color="#000000" bgColor="#ffffff">
+    <region id="45" top="15804" color="#000000" bgColor="#ffffff">
       <area terminator="true" />
     </region>
   </region>
-  <region id="45" left="36" top="15750" width="517" height="533" border="true" color="#ffff80" bgColor="#808080" fontSize="10">
+  <region id="46" left="36" top="15867" width="517" height="533" border="true" color="#ffff80" bgColor="#808080" fontSize="10">
     <table id="1" elementsOnDataSizeChange="10,10" focus="0,0;0,0" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
       <inputs>
         <e regions="columns">photontorpedoes</e>
@@ -2937,7 +2960,7 @@ Please, type "HLP" for HELP              </td>
       </input>
     </table>
   </region>
-  <region id="46" left="558" top="15750" width="531" height="263" border="true" color="#000000" bgColor="#ffffff" fontSize="10" showInputData="False">
+  <region id="47" left="558" top="15867" width="531" height="263" border="true" color="#000000" bgColor="#ffffff" fontSize="10" showInputData="False">
     <table id="2" elementsOnDataSizeChange="10,10" focus="0,0;1,6" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
       <inputs>
         <e regions="columns">photontorpedoes</e>
@@ -2978,15 +3001,15 @@ Please, type "HLP" for HELP              </td>
         <body rows="7" cols="2" align="Near" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Columns" styleEffects="None" font="Microsoft Sans Serif, 15.75pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
             <td>STARDATE</td>
-            <td>1193</td>
+            <td>1045</td>
           </tr>
           <tr>
             <td>SECTOR</td>
-            <td>6 5</td>
+            <td>8 1</td>
           </tr>
           <tr>
             <td>CONDITION</td>
-            <td>GREEN</td>
+            <td>RED</td>
           </tr>
           <tr>
             <td>ENERGY</td>
@@ -3002,7 +3025,7 @@ Please, type "HLP" for HELP              </td>
           </tr>
           <tr>
             <td>KLINGONS LEFT</td>
-            <td>23</td>
+            <td>39</td>
           </tr>
         </body>
         <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
@@ -3076,7 +3099,7 @@ Please, type "HLP" for HELP              </td>
       </input>
     </table>
   </region>
-  <region id="47" left="558" top="16020" width="286" height="62" color="#000000" bgColor="#ffffff" fontSize="10" showInputData="False">
+  <region id="48" left="558" top="16137" width="286" height="62" color="#000000" bgColor="#ffffff" fontSize="10" showInputData="False">
     <table id="3" elementsOnDataSizeChange="10,10" focus="0,0;0,0" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
       <inputs>
         <e regions="columns">photontorpedoes</e>
