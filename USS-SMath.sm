@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>153</revision>
+      <revision>154</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -33,7 +33,7 @@
     </dependencies>
   </settings>
   <region id="0" top="9" color="#000000" bgColor="#ffffff">
-    <area collapsed="false">
+    <area collapsed="true">
       <title lang="spa">
         <p>Main</p>
       </title>
