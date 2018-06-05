@@ -1,0 +1,15 @@
+"           COMMAND NOT RECOGNISED
+            POSIBLE COMMANDS ARE:
+
+'NAV QQ SS W'     Navigate to Quadrant QQ
+                  Sector SS at Warp W
+'SRS'             Short Range Scan
+'LRS'             Long Range Scan
+'PHA PP'          Shot Phasers with PP
+                  energy units
+'TOR S1 S2..'     Shot Photon Torpedoes to
+                  sector S1, S2, ...
+                  to sector SS
+'SHL X'           Shield Up with X
+                  energy units
+'RES'             Resign                 "
