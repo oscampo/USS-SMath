@@ -4,7 +4,7 @@
   <settings dpi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>154</revision>
+      <revision>159</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -111,7 +111,7 @@
         </input>
       </math>
     </region>
-    <region id="6" left="135" top="315" width="1107" height="3611" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="6" left="135" top="315" width="1107" height="3667" color="#000000" bgColor="#ffffff" fontSize="10">
       <math optimize="2">
         <input>
           <e type="operand">input</e>
@@ -507,10 +507,24 @@
           <e type="function" args="2">el</e>
           <e type="operand" style="string">HLP</e>
           <e type="operator" args="2">≡</e>
+          <e type="operand">input</e>
+          <e type="function" args="1">savegame</e>
+          <e type="operand">input</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operand" style="string">SAV</e>
+          <e type="operator" args="2">≡</e>
+          <e type="operand">input</e>
+          <e type="function" args="1">resume</e>
+          <e type="operand">input</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operand" style="string">RES</e>
+          <e type="operator" args="2">≡</e>
           <e type="operand">path</e>
           <e type="operand" style="string">error.txt</e>
           <e type="function" args="2">rfile</e>
-          <e type="function" args="15">cases</e>
+          <e type="function" args="19">cases</e>
           <e type="operator" args="2">:</e>
           <e type="operand">dat</e>
           <e type="operand">data</e>
@@ -760,8 +774,8 @@
       <area terminator="true" />
     </region>
   </region>
-  <region id="9" top="4275" color="#000000" bgColor="#ffffff">
-    <area collapsed="true">
+  <region id="9" top="4293" color="#000000" bgColor="#ffffff">
+    <area collapsed="false">
       <title lang="spa">
         <p>FUNCTIONS</p>
       </title>
@@ -821,13 +835,13 @@
         <area terminator="true" />
       </region>
     </region>
-    <region id="13" top="4662" color="#000000" bgColor="#ffffff">
+    <region id="13" top="4653" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>INIT</p>
         </title>
       </area>
-      <region id="14" left="63" top="4707" width="785" height="671" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="14" left="63" top="4698" width="785" height="671" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">secVector</e>
@@ -966,17 +980,17 @@
           </input>
         </math>
       </region>
-      <region id="15" top="5517" color="#000000" bgColor="#ffffff">
+      <region id="15" top="5508" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="16" top="5571" color="#000000" bgColor="#ffffff">
+    <region id="16" top="5544" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>SRS</p>
         </title>
       </area>
-      <region id="17" left="36" top="5616" width="679" height="551" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="17" left="36" top="5589" width="679" height="551" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">current_sector</e>
@@ -1114,70 +1128,17 @@
           </input>
         </math>
       </region>
-      <region id="18" top="6399" color="#000000" bgColor="#ffffff">
+      <region id="18" top="6372" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="19" top="6444" color="#000000" bgColor="#ffffff">
-      <area collapsed="true">
+    <region id="19" top="6408" color="#000000" bgColor="#ffffff">
+      <area collapsed="false">
         <title lang="spa">
-          <p>STATUS / SHAPE / SHOWHELP / POS2COORD</p>
+          <p>SHAPE / SHOWHELP / POS2COORD</p>
         </title>
       </area>
-      <region id="20" left="36" top="6489" width="1334" height="86" color="#000000" bgColor="#ffffff" fontSize="10">
-        <math>
-          <input>
-            <e type="operand">sector</e>
-            <e type="operand">stardate</e>
-            <e type="operand">cond</e>
-            <e type="operand">energy</e>
-            <e type="operand">torpedoes</e>
-            <e type="operand">shields</e>
-            <e type="operand">klingons</e>
-            <e type="function" args="7">status</e>
-            <e type="operand">dat</e>
-            <e type="operand">data</e>
-            <e type="function" args="1">rfile</e>
-            <e type="operator" args="2">:</e>
-            <e type="operand" style="string">STARDATE</e>
-            <e type="operand" style="string">SECTOR</e>
-            <e type="operand" style="string">CONDITION</e>
-            <e type="operand" style="string">ENERGY</e>
-            <e type="operand" style="string">PHOTON TORPEDOES</e>
-            <e type="operand" style="string">SHIELDS</e>
-            <e type="operand" style="string">KLINGONS LEFT</e>
-            <e type="operand">dat</e>
-            <e type="operand">1</e>
-            <e type="function" args="2">el</e>
-            <e type="operand">sector</e>
-            <e type="function" args="1">pos2coord</e>
-            <e type="operand">dat</e>
-            <e type="operand">9</e>
-            <e type="function" args="2">el</e>
-            <e type="operand">dat</e>
-            <e type="operand">2</e>
-            <e type="function" args="2">el</e>
-            <e type="operand">dat</e>
-            <e type="operand">3</e>
-            <e type="function" args="2">el</e>
-            <e type="operand">dat</e>
-            <e type="operand">12</e>
-            <e type="function" args="2">el</e>
-            <e type="operand">dat</e>
-            <e type="operand">4</e>
-            <e type="function" args="2">el</e>
-            <e type="operand">2</e>
-            <e type="operand">7</e>
-            <e type="function" args="16">mat</e>
-            <e type="function" args="1">transpose</e>
-            <e type="operand">2</e>
-            <e type="operand">1</e>
-            <e type="function" args="4">line</e>
-            <e type="operator" args="2">:</e>
-          </input>
-        </math>
-      </region>
-      <region id="21" left="9" top="6606" width="502" height="132" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="20" left="9" top="6570" width="502" height="132" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">vec</e>
@@ -1238,7 +1199,7 @@
           </input>
         </math>
       </region>
-      <region id="22" left="27" top="6786" width="296" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="21" left="27" top="6750" width="296" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">h</e>
@@ -1250,7 +1211,7 @@
           </input>
         </math>
       </region>
-      <region id="23" left="27" top="6849" width="414" height="157" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="22" left="27" top="6813" width="414" height="157" color="#000000" bgColor="#ffffff" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">pos</e>
@@ -1296,17 +1257,17 @@
           </input>
         </math>
       </region>
-      <region id="24" top="7074" color="#000000" bgColor="#ffffff">
+      <region id="23" top="7038" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="25" top="7119" color="#000000" bgColor="#ffffff">
+    <region id="24" top="7074" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>NAVIGATE</p>
         </title>
       </area>
-      <region id="26" left="117" top="7173" width="1211" height="1716" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="25" left="117" top="7128" width="1211" height="1716" color="#000000" bgColor="#ffffff" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">galaxy</e>
@@ -1691,17 +1652,17 @@
           </input>
         </math>
       </region>
-      <region id="27" top="9054" color="#000000" bgColor="#ffffff">
+      <region id="26" top="9009" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="28" top="9108" color="#000000" bgColor="#ffffff">
+    <region id="27" top="9045" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>LRS</p>
         </title>
       </area>
-      <region id="29" left="90" top="9126" width="383" height="864" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="28" left="90" top="9063" width="383" height="864" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">gal</e>
@@ -1868,7 +1829,7 @@
           </input>
         </math>
       </region>
-      <region id="30" left="594" top="9126" width="213" height="141" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="29" left="594" top="9063" width="213" height="141" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">sect</e>
@@ -1898,17 +1859,17 @@
           </input>
         </math>
       </region>
-      <region id="31" top="10080" color="#000000" bgColor="#ffffff">
+      <region id="30" top="10017" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="32" top="10125" color="#000000" bgColor="#ffffff">
+    <region id="31" top="10053" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>SHIELDS</p>
         </title>
       </area>
-      <region id="33" left="108" top="10170" width="923" height="489" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="32" left="108" top="10098" width="923" height="489" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">energy</e>
@@ -2000,17 +1961,17 @@
           </input>
         </math>
       </region>
-      <region id="34" top="10665" color="#000000" bgColor="#ffffff">
+      <region id="33" top="10593" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="35" top="10710" color="#000000" bgColor="#ffffff">
+    <region id="34" top="10629" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
           <p>PHASERS</p>
         </title>
       </area>
-      <region id="36" left="108" top="10773" width="1144" height="2607" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="35" left="108" top="10692" width="1144" height="2607" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">cond</e>
@@ -2510,17 +2471,17 @@
           </input>
         </math>
       </region>
-      <region id="37" top="13617" color="#000000" bgColor="#ffffff">
+      <region id="36" top="13536" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="38" top="13662" color="#000000" bgColor="#ffffff">
-      <area collapsed="true">
+    <region id="37" top="13572" color="#000000" bgColor="#ffffff">
+      <area collapsed="false">
         <title lang="spa">
           <p>PHOTONTORPEDOES</p>
         </title>
       </area>
-      <region id="39" left="27" top="13698" width="1091" height="1388" color="#000000" bgColor="#ffffff" fontSize="10">
+      <region id="38" left="27" top="13608" width="1037" height="1713" color="#000000" bgColor="#ffffff" fontSize="10">
         <math>
           <input>
             <e type="operand">torpedoes</e>
@@ -2662,9 +2623,8 @@
             <e type="operand">coord</e>
             <e type="function" args="1">length</e>
             <e type="function" args="2">range</e>
-            <e type="operand" style="string">check if there is a klingon on target coords</e>
-            <e type="operand">target_pos</e>
-            <e type="operand">8</e>
+            <e type="operand" style="string">check if there is a klingon/base on torpedo course</e>
+            <e type="operand">Tc</e>
             <e type="operand">coord</e>
             <e type="operand">i</e>
             <e type="function" args="2">el</e>
@@ -2672,10 +2632,6 @@
             <e type="operand">1</e>
             <e type="function" args="3">substr</e>
             <e type="function" args="1">str2num</e>
-            <e type="operand">1</e>
-            <e type="operator" args="2">-</e>
-            <e type="bracket">(</e>
-            <e type="operator" args="2">*</e>
             <e type="operand">coord</e>
             <e type="operand">i</e>
             <e type="function" args="2">el</e>
@@ -2683,6 +2639,75 @@
             <e type="operand">1</e>
             <e type="function" args="3">substr</e>
             <e type="function" args="1">str2num</e>
+            <e type="operand">2</e>
+            <e type="operand">1</e>
+            <e type="function" args="4">mat</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">Ec</e>
+            <e type="operand">epos</e>
+            <e type="function" args="1">pos2coord</e>
+            <e type="operand" style="string"> </e>
+            <e type="function" args="2">strsplit</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">Ec</e>
+            <e type="operand">Ec</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="function" args="1">str2num</e>
+            <e type="operand">Ec</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="function" args="1">str2num</e>
+            <e type="operand">2</e>
+            <e type="operand">1</e>
+            <e type="function" args="4">mat</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">i</e>
+            <e type="operand">Ec</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="operand">Tc</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="function" args="2">range</e>
+            <e type="operand">j</e>
+            <e type="operand">Ec</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="operand">Tc</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">-</e>
+            <e type="operand">Ec</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="operand">Tc</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">-</e>
+            <e type="operator" args="2">/</e>
+            <e type="operand">i</e>
+            <e type="operand">Tc</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">-</e>
+            <e type="bracket">(</e>
+            <e type="operator" args="2">*</e>
+            <e type="operand">Tc</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">+</e>
+            <e type="operand">0</e>
+            <e type="function" args="2">round</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">target_pos</e>
+            <e type="operand">8</e>
+            <e type="operand">i</e>
+            <e type="operand">1</e>
+            <e type="operator" args="2">-</e>
+            <e type="bracket">(</e>
+            <e type="operator" args="2">*</e>
+            <e type="operand">j</e>
             <e type="operator" args="2">+</e>
             <e type="operator" args="2">:</e>
             <e type="operand">result</e>
@@ -2692,15 +2717,35 @@
             <e type="function" args="2">el</e>
             <e type="operand">0</e>
             <e type="operator" args="2">&lt;</e>
-            <e type="operand" style="string">STARBASE DESTROYED</e>
+            <e type="operand" style="string">*****STARBASE DESTROYED******</e>
             <e type="operand">cur_sec</e>
             <e type="operand">target_pos</e>
             <e type="function" args="2">el</e>
             <e type="operand">2</e>
             <e type="operator" args="2">≡</e>
+            <e type="operand" style="string">torpedo on course</e>
+            <e type="operand">i</e>
+            <e type="operand">Tc</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">≠</e>
             <e type="operand" style="string">TORPEDO MISSED</e>
-            <e type="function" args="5">cases</e>
+            <e type="function" args="7">cases</e>
             <e type="operator" args="2">:</e>
+            <e type="operand">result</e>
+            <e type="operand" style="string"> </e>
+            <e type="function" args="2">strsplit</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="operand" style="string">DESTROYED</e>
+            <e type="operator" args="2">≡</e>
+            <e type="operand">break</e>
+            <e type="operand" style="string" />
+            <e type="function" args="3">if</e>
+            <e type="operand">4</e>
+            <e type="operand">1</e>
+            <e type="function" args="6">line</e>
+            <e type="function" args="3">for</e>
             <e type="operand">klingons</e>
             <e type="operand">klingons</e>
             <e type="operand">1</e>
@@ -2785,9 +2830,9 @@
             <e type="operand">result</e>
             <e type="function" args="2">stack</e>
             <e type="operator" args="2">:</e>
-            <e type="operand">9</e>
+            <e type="operand">11</e>
             <e type="operand">1</e>
-            <e type="function" args="11">line</e>
+            <e type="function" args="13">line</e>
             <e type="function" args="3">for</e>
             <e type="operand">5</e>
             <e type="operand">1</e>
@@ -2834,37 +2879,178 @@
           </input>
         </math>
       </region>
-      <region id="40" top="15255" color="#000000" bgColor="#ffffff">
+      <region id="39" top="15318" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="41" top="15282" color="#000000" bgColor="#ffffff">
+    <region id="40" top="15354" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
-          <p>PROMOTION</p>
+          <p>SAVE GAME</p>
         </title>
       </area>
-      <region id="42" top="15516" color="#000000" bgColor="#ffffff">
+      <region id="41" left="45" top="15399" width="591" height="98" color="#000000" bgColor="#ffffff" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">inp</e>
+            <e type="function" args="1">savegame</e>
+            <e type="operand">status</e>
+            <e type="operand">data</e>
+            <e type="function" args="1">rfile</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">MyGame</e>
+            <e type="operand">inp</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">status</e>
+            <e type="operand">path</e>
+            <e type="operand">MyGame</e>
+            <e type="function" args="3">wfile</e>
+            <e type="operand" style="string">FILE </e>
+            <e type="operand">MyGame</e>
+            <e type="function" args="1">strtoupper</e>
+            <e type="operand" style="string"> SAVED SUCCESSFULLY</e>
+            <e type="function" args="3">concat</e>
+            <e type="operand">4</e>
+            <e type="operand">1</e>
+            <e type="function" args="6">line</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region id="42" top="15588" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="43" top="15552" color="#000000" bgColor="#ffffff">
+    <region id="43" top="15624" color="#000000" bgColor="#ffffff">
       <area collapsed="true">
         <title lang="spa">
-          <p>LOSE</p>
+          <p>RESUME GAME</p>
         </title>
       </area>
-      <region id="44" top="15786" color="#000000" bgColor="#ffffff">
+      <region id="44" left="27" top="15678" width="419" height="532" color="#000000" bgColor="#ffffff" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">inp</e>
+            <e type="function" args="1">resume</e>
+            <e type="operand">MyGame</e>
+            <e type="operand">inp</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">dat</e>
+            <e type="operand">path</e>
+            <e type="operand">MyGame</e>
+            <e type="function" args="2">rfile</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">dat</e>
+            <e type="operand">data</e>
+            <e type="function" args="2">wfile</e>
+            <e type="operand">dat</e>
+            <e type="operand">data</e>
+            <e type="function" args="1">rfile</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">stardate</e>
+            <e type="operand">dat</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">energy</e>
+            <e type="operand">dat</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">torpedoes</e>
+            <e type="operand">dat</e>
+            <e type="operand">3</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">klingons</e>
+            <e type="operand">dat</e>
+            <e type="operand">4</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">galaxy</e>
+            <e type="operand">dat</e>
+            <e type="operand">5</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">sector</e>
+            <e type="operand">dat</e>
+            <e type="operand">6</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">ent_position</e>
+            <e type="operand">dat</e>
+            <e type="operand">7</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">current_sector</e>
+            <e type="operand">dat</e>
+            <e type="operand">8</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">cond</e>
+            <e type="operand">dat</e>
+            <e type="operand">9</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">stat</e>
+            <e type="operand">dat</e>
+            <e type="operand">10</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">knownGalaxy</e>
+            <e type="operand">dat</e>
+            <e type="operand">11</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">shields</e>
+            <e type="operand">dat</e>
+            <e type="operand">12</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">sctr</e>
+            <e type="operand">dat</e>
+            <e type="operand">13</e>
+            <e type="function" args="2">el</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">14</e>
+            <e type="operand">1</e>
+            <e type="function" args="16">line</e>
+            <e type="operand">current_sector</e>
+            <e type="operand">ent_position</e>
+            <e type="function" args="2">srs</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="operand">4</e>
+            <e type="operand">1</e>
+            <e type="function" args="6">line</e>
+            <e type="operand" style="string">NO FILE CALLED </e>
+            <e type="operand">MyGame</e>
+            <e type="function" args="2">concat</e>
+            <e type="function" args="2">try</e>
+            <e type="operand">2</e>
+            <e type="operand">1</e>
+            <e type="function" args="4">line</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region id="45" top="16218" color="#000000" bgColor="#ffffff">
         <area terminator="true" />
       </region>
     </region>
-    <region id="45" top="15804" color="#000000" bgColor="#ffffff">
+    <region id="46" top="16272" color="#000000" bgColor="#ffffff">
       <area terminator="true" />
     </region>
   </region>
-  <region id="46" left="36" top="15867" width="517" height="533" border="true" color="#ffff80" bgColor="#808080" fontSize="10">
+  <region id="47" left="36" top="16335" width="517" height="533" border="true" color="#ffff80" bgColor="#808080" fontSize="10">
     <table id="1" elementsOnDataSizeChange="10,10" focus="0,0;0,0" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
       <inputs>
+        <e regions="columns">resume</e>
+        <e regions="columns">savegame</e>
         <e regions="columns">photontorpedoes</e>
         <e regions="columns">phasers</e>
         <e regions="columns">addshields</e>
@@ -2873,7 +3059,6 @@
         <e regions="columns">navigate</e>
         <e regions="columns">pos2coord</e>
         <e regions="columns">shape</e>
-        <e regions="columns">status</e>
         <e regions="columns">srs</e>
         <e regions="columns">init</e>
         <e regions="columns">decode</e>
@@ -2883,6 +3068,8 @@
         <e regions="rows">current_sector</e>
         <e regions="rows">sctr</e>
         <e regions="rows">galaxy</e>
+        <e regions="rows">resume</e>
+        <e regions="rows">savegame</e>
         <e regions="rows">photontorpedoes</e>
         <e regions="rows">phasers</e>
         <e regions="rows">addshields</e>
@@ -2891,7 +3078,6 @@
         <e regions="rows">navigate</e>
         <e regions="rows">pos2coord</e>
         <e regions="rows">shape</e>
-        <e regions="rows">status</e>
         <e regions="rows">srs</e>
         <e regions="rows">init</e>
         <e regions="rows">decode</e>
@@ -2931,12 +3117,12 @@ Please, type "HLP" for HELP              </td>
             <td>#</td>
           </tr>
         </units>
-        <header input="" rows="1" cols="1" align="Near" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+        <header input="hcol" rows="1" cols="1" align="Near" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
             <td>#</td>
           </tr>
         </header>
-        <lstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
+        <lstub input="vfil" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
             <td>#</td>
           </tr>
@@ -2960,9 +3146,11 @@ Please, type "HLP" for HELP              </td>
       </input>
     </table>
   </region>
-  <region id="47" left="558" top="15867" width="531" height="263" border="true" color="#000000" bgColor="#ffffff" fontSize="10" showInputData="False">
+  <region id="48" left="558" top="16335" width="531" height="263" border="true" color="#000000" bgColor="#ffffff" fontSize="10" showInputData="False">
     <table id="2" elementsOnDataSizeChange="10,10" focus="0,0;1,6" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
       <inputs>
+        <e regions="columns">resume</e>
+        <e regions="columns">savegame</e>
         <e regions="columns">photontorpedoes</e>
         <e regions="columns">phasers</e>
         <e regions="columns">addshields</e>
@@ -2971,7 +3159,6 @@ Please, type "HLP" for HELP              </td>
         <e regions="columns">navigate</e>
         <e regions="columns">pos2coord</e>
         <e regions="columns">shape</e>
-        <e regions="columns">status</e>
         <e regions="columns">srs</e>
         <e regions="columns">init</e>
         <e regions="columns">decode</e>
@@ -2982,6 +3169,8 @@ Please, type "HLP" for HELP              </td>
         <e regions="rows">current_sector</e>
         <e regions="rows">sctr</e>
         <e regions="rows">galaxy</e>
+        <e regions="rows">resume</e>
+        <e regions="rows">savegame</e>
         <e regions="rows">photontorpedoes</e>
         <e regions="rows">phasers</e>
         <e regions="rows">addshields</e>
@@ -2990,7 +3179,6 @@ Please, type "HLP" for HELP              </td>
         <e regions="rows">navigate</e>
         <e regions="rows">pos2coord</e>
         <e regions="rows">shape</e>
-        <e regions="rows">status</e>
         <e regions="rows">srs</e>
         <e regions="rows">init</e>
         <e regions="rows">decode</e>
@@ -3001,15 +3189,15 @@ Please, type "HLP" for HELP              </td>
         <body rows="7" cols="2" align="Near" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Columns" styleEffects="None" font="Microsoft Sans Serif, 15.75pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
           <tr>
             <td>STARDATE</td>
-            <td>1045</td>
+            <td>1371</td>
           </tr>
           <tr>
             <td>SECTOR</td>
-            <td>8 1</td>
+            <td>4 6</td>
           </tr>
           <tr>
             <td>CONDITION</td>
-            <td>RED</td>
+            <td>GREEN</td>
           </tr>
           <tr>
             <td>ENERGY</td>
@@ -3025,7 +3213,7 @@ Please, type "HLP" for HELP              </td>
           </tr>
           <tr>
             <td>KLINGONS LEFT</td>
-            <td>39</td>
+            <td>34</td>
           </tr>
         </body>
         <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Times New Roman, 12pt, style=Bold" ellipsisSize="0">
@@ -3099,9 +3287,11 @@ Please, type "HLP" for HELP              </td>
       </input>
     </table>
   </region>
-  <region id="48" left="558" top="16137" width="286" height="62" color="#000000" bgColor="#ffffff" fontSize="10" showInputData="False">
+  <region id="49" left="558" top="16605" width="286" height="62" color="#000000" bgColor="#ffffff" fontSize="10" showInputData="False">
     <table id="3" elementsOnDataSizeChange="10,10" focus="0,0;0,0" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
       <inputs>
+        <e regions="columns">resume</e>
+        <e regions="columns">savegame</e>
         <e regions="columns">photontorpedoes</e>
         <e regions="columns">phasers</e>
         <e regions="columns">addshields</e>
@@ -3110,7 +3300,6 @@ Please, type "HLP" for HELP              </td>
         <e regions="columns">navigate</e>
         <e regions="columns">pos2coord</e>
         <e regions="columns">shape</e>
-        <e regions="columns">status</e>
         <e regions="columns">srs</e>
         <e regions="columns">init</e>
         <e regions="columns">decode</e>
@@ -3121,6 +3310,8 @@ Please, type "HLP" for HELP              </td>
         <e regions="rows">current_sector</e>
         <e regions="rows">sctr</e>
         <e regions="rows">galaxy</e>
+        <e regions="rows">resume</e>
+        <e regions="rows">savegame</e>
         <e regions="rows">photontorpedoes</e>
         <e regions="rows">phasers</e>
         <e regions="rows">addshields</e>
@@ -3129,7 +3320,6 @@ Please, type "HLP" for HELP              </td>
         <e regions="rows">navigate</e>
         <e regions="rows">pos2coord</e>
         <e regions="rows">shape</e>
-        <e regions="rows">status</e>
         <e regions="rows">srs</e>
         <e regions="rows">init</e>
         <e regions="rows">decode</e>
