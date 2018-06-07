@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.6671.38791"?>
+<regions xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings dpi="96">
+    <identity>
+      <id>14bce1d6-8149-4de9-8066-f151002b2d77</id>
+      <revision>5</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="False" printAreas="True" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.6671.38791" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Mathcad File Access Functions" version="1.0.6520.39061" guid="02a1c2c5-590e-46bb-bcf6-c87856a8b14b" />
+      <assembly name="Math Region" version="0.99.6671.38791" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Special Functions" version="1.11.6671.38793" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+    </dependencies>
+  </settings>
+  <region id="0" left="45" top="27" width="615" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">path</e>
+        <e type="operand" style="string" />
+        <e type="function" args="1">CurrentDirectory</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand" style="string">D:\Users\oicampo\Documents\GitHub\USS-SMath\</e>
+      </result>
+    </math>
+  </region>
+  <region id="1" left="45" top="72" width="366" height="28" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">path</e>
+        <e type="operand" style="string">tng_warp6_clean.wav</e>
+        <e type="function" args="2">concat</e>
+        <e type="function" args="1">Play</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">1</e>
+      </result>
+    </math>
+  </region>
+</regions>
