@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?application progid="SMath Studio Desktop" version="0.99.7251.32800"?>
+<?application progid="SMath Studio Desktop" version="0.99.7822.147"?>
 <worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
   <settings ppi="120">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>191</revision>
+      <revision>195</revision>
     </identity>
+    <metadata lang="spa">
+      <author>Oscar Campo</author>
+    </metadata>
     <calculation>
       <precision>4</precision>
       <exponentialThreshold>5</exponentialThreshold>
@@ -22,13 +25,14 @@
       <backgrounds />
     </pageModel>
     <dependencies>
-      <assembly name="SMath Studio Desktop" version="0.99.7251.32800" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
-      <assembly name="Mathcad File Access Functions" version="1.0.7243.36103" guid="02a1c2c5-590e-46bb-bcf6-c87856a8b14b" />
-      <assembly name="Math Region" version="0.99.7251.32800" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
-      <assembly name="Custom Functions" version="1.1.7200.16172" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
-      <assembly name="SpecialFunctions" version="1.12.7251.32800" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
-      <assembly name="TextRegion" version="1.11.7251.32800" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
-      <assembly name="Table Region" version="0.2.7097.29803" guid="51fec712-ec75-4551-a13e-478d375ae8d6" />
+      <assembly name="SMath Studio Desktop" version="0.99.7822.147" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Mathcad File Access Functions" version="1.0.7850.28384" guid="02a1c2c5-590e-46bb-bcf6-c87856a8b14b" />
+      <assembly name="MathRegion" version="1.11.7822.147" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.7840.30466" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
+      <assembly name="SpecialFunctions" version="1.12.7822.147" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="TextRegion" version="1.11.7822.147" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="AreaRegion" version="1.11.7822.147" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
+      <assembly name="Table Region" version="0.3.7806.4448" guid="51fec712-ec75-4551-a13e-478d375ae8d6" />
       <assembly name="Statistical Tools" version="1.0.6824.32561" guid="76f6e9f5-ac86-4ffb-9e4d-284c8daecaf9" />
     </dependencies>
   </settings>
@@ -36,10 +40,12 @@
     <region top="9" color="#000000">
       <area collapsed="true">
         <title lang="spa">
-          <p>Main</p>
+          <content>
+            <p>Main</p>
+          </content>
         </title>
       </area>
-      <region left="126" top="45" width="686" height="26" color="#000000" fontSize="10">
+      <region left="126" top="36" width="366" height="26" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">path</e>
@@ -48,26 +54,28 @@
             <e type="operator" args="2">:</e>
           </input>
           <result action="numeric">
-            <e type="operand" style="string">C:\Users\oscam\OneDrive\Documentos2\GitHub\USS-SMath\</e>
+            <e type="operand" style="string">C:\USS-SMath\</e>
           </result>
         </math>
       </region>
-      <region left="135" top="90" width="206" height="99" color="#000000" fontSize="10">
-        <math error="9">
+      <region left="135" top="90" width="226" height="99" color="#000000" fontSize="10">
+        <math>
           <input>
-            <e type="operand">data</e>
-            <e type="function" args="1">rfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">data</e>
+            <e type="function" args="2">rfile</e>
             <e type="operand" style="string"></e>
             <e type="operator" args="2">≠</e>
             <e type="operand" style="string">ok</e>
             <e type="operand">dat</e>
             <e type="operand">path</e>
-            <e type="operand">data</e>
+            <e type="operand" style="string">data</e>
             <e type="function" args="2">rfile</e>
             <e type="operator" args="2">:</e>
             <e type="operand">dat</e>
-            <e type="operand">data</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">data</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand">2</e>
             <e type="operand">1</e>
             <e type="function" args="4">line</e>
@@ -262,8 +270,9 @@
             <e type="operand">13</e>
             <e type="operand">1</e>
             <e type="function" args="15">mat</e>
-            <e type="operand">data</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">data</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand" style="string">Keep going until we have destroyed all the klingons or we run out of </e>
             <e type="operand" style="string">energy or we quit</e>
             <e type="operand">path</e>
@@ -274,17 +283,19 @@
             <e type="operand" style="string">YOUR ORDERS, CAPTAIN?</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
-            <e type="operand">communications</e>
-            <e type="function" args="2">wfile</e>
             <e type="operand">path</e>
-            <e type="operand" style="string">intro.txt</e>
+            <e type="operand" style="string">communications</e>
+            <e type="function" args="3">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">intro</e>
             <e type="function" args="2">rfile</e>
             <e type="operand">30</e>
             <e type="operand">1</e>
             <e type="function" args="32">line</e>
             <e type="operand">dat</e>
-            <e type="operand">data</e>
-            <e type="function" args="1">rfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">data</e>
+            <e type="function" args="2">rfile</e>
             <e type="operator" args="2">:</e>
             <e type="operand">stardate</e>
             <e type="operand">dat</e>
@@ -364,8 +375,9 @@
             <e type="bracket">(</e>
             <e type="operator" args="2">&amp;</e>
             <e type="operand">dat</e>
-            <e type="operand">data</e>
-            <e type="function" args="1">rfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">data</e>
+            <e type="function" args="2">rfile</e>
             <e type="operator" args="2">:</e>
             <e type="operand">stardate</e>
             <e type="operand">dat</e>
@@ -433,8 +445,9 @@
             <e type="function" args="2">el</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
-            <e type="operand">communications</e>
-            <e type="function" args="1">rfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">communications</e>
+            <e type="function" args="2">rfile</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
             <e type="function" args="1">num2str</e>
@@ -445,8 +458,9 @@
             <e type="operand" style="string">...</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
-            <e type="operand">communications</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">communications</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand">2</e>
             <e type="operand">1</e>
             <e type="function" args="4">line</e>
@@ -547,13 +561,14 @@
             <e type="operand" style="string">RES</e>
             <e type="operator" args="2">≡</e>
             <e type="operand">path</e>
-            <e type="operand" style="string">error.txt</e>
+            <e type="operand" style="string">error</e>
             <e type="function" args="2">rfile</e>
             <e type="function" args="19">cases</e>
             <e type="operator" args="2">:</e>
             <e type="operand">dat</e>
-            <e type="operand">data</e>
-            <e type="function" args="1">rfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">data</e>
+            <e type="function" args="2">rfile</e>
             <e type="operator" args="2">:</e>
             <e type="operand">stardate</e>
             <e type="operand">dat</e>
@@ -632,8 +647,9 @@
             <e type="operand">6</e>
             <e type="operator" args="2">&lt;</e>
             <e type="operand">msj</e>
-            <e type="operand">communications</e>
-            <e type="function" args="1">rfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">communications</e>
+            <e type="function" args="2">rfile</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
             <e type="operand">msj</e>
@@ -668,8 +684,9 @@
             <e type="function" args="2">concat</e>
             <e type="function" args="1">Play</e>
             <e type="operand">msj</e>
-            <e type="operand">communications</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">communications</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand">shields</e>
             <e type="operand">0</e>
             <e type="operator" args="2">&lt;</e>
@@ -682,8 +699,9 @@
             <e type="operand">0</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
-            <e type="operand">communications</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">communications</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand">stardate</e>
             <e type="operand">energy</e>
             <e type="operand">torpedoes</e>
@@ -700,8 +718,9 @@
             <e type="operand">13</e>
             <e type="operand">1</e>
             <e type="function" args="15">mat</e>
-            <e type="operand">data</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">data</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand">4</e>
             <e type="operand">1</e>
             <e type="function" args="6">line</e>
@@ -713,8 +732,9 @@
             <e type="function" args="2">el</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
-            <e type="operand">communications</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">communications</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand">stardate</e>
             <e type="operand">energy</e>
             <e type="operand">torpedoes</e>
@@ -731,8 +751,9 @@
             <e type="operand">13</e>
             <e type="operand">1</e>
             <e type="function" args="15">mat</e>
-            <e type="operand">data</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">data</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand">3</e>
             <e type="operand">1</e>
             <e type="function" args="5">line</e>
@@ -760,8 +781,9 @@
             <e type="function" args="5">sys</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
-            <e type="operand">communications</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">communications</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand">path</e>
             <e type="operand" style="string">FederationLogo.txt</e>
             <e type="function" args="2">rfile</e>
@@ -772,8 +794,9 @@
             <e type="operand" style="string">You are relieved of duty.</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
-            <e type="operand">communications</e>
-            <e type="function" args="2">wfile</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">communications</e>
+            <e type="function" args="3">wfile</e>
             <e type="operand" style="string">Your life support reserves have run out,</e>
             <e type="operand" style="string">and you die of thirst, starvation, and</e>
             <e type="operand" style="string">asphyxiation.</e>
@@ -794,9 +817,11 @@
           </input>
         </math>
       </region>
-      <region left="90" top="405" width="16" height="24" color="#000000" fontSize="10">
-        <text lang="spa">
-          <p></p>
+      <region left="90" top="405" width="15" height="23" color="#000000" fontSize="10" isBreakable="false">
+        <text lang="spa" fontFamily="Arial" fontSize="10">
+          <content>
+            <p style="font-family: Courier New;"></p>
+          </content>
         </text>
       </region>
       <region top="4239" color="#000000">
@@ -806,13 +831,17 @@
     <region top="4293" color="#000000">
       <area collapsed="true">
         <title lang="spa">
-          <p>FUNCTIONS</p>
+          <content>
+            <p>FUNCTIONS</p>
+          </content>
         </title>
       </area>
       <region top="4329" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>DECODE</p>
+            <content>
+              <p>DECODE</p>
+            </content>
           </title>
         </area>
         <region left="63" top="4392" width="390" height="159" color="#000000" fontSize="10">
@@ -867,7 +896,9 @@
       <region top="4653" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>INIT</p>
+            <content>
+              <p>INIT</p>
+            </content>
           </title>
         </area>
         <region left="63" top="4698" width="788" height="676" color="#000000" fontSize="10">
@@ -1016,7 +1047,9 @@
       <region top="5544" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>SRS</p>
+            <content>
+              <p>SRS</p>
+            </content>
           </title>
         </area>
         <region left="36" top="5589" width="701" height="556" color="#000000" fontSize="10">
@@ -1164,7 +1197,9 @@
       <region top="6408" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>SHAPE / SHOWHELP / POS2COORD</p>
+            <content>
+              <p>SHAPE / SHOWHELP / POS2COORD</p>
+            </content>
           </title>
         </area>
         <region left="18" top="6570" width="524" height="134" color="#000000" fontSize="10">
@@ -1228,13 +1263,13 @@
             </input>
           </math>
         </region>
-        <region left="18" top="6750" width="301" height="26" color="#000000" fontSize="10">
+        <region left="18" top="6750" width="269" height="26" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">h</e>
               <e type="function" args="1">showhelp</e>
               <e type="operand">path</e>
-              <e type="operand" style="string">help.txt</e>
+              <e type="operand" style="string">help</e>
               <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
             </input>
@@ -1296,7 +1331,9 @@
       <region top="7074" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>NAVIGATE</p>
+            <content>
+              <p>NAVIGATE</p>
+            </content>
           </title>
         </area>
         <region left="117" top="7128" width="1313" height="1976" color="#000000" fontSize="10">
@@ -1311,11 +1348,13 @@
               <e type="operand">coord</e>
               <e type="function" args="7">navigate</e>
               <e type="operand" style="string">...</e>
-              <e type="operand">communications</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="1">rfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">warp</e>
               <e type="operand">coord</e>
@@ -1594,8 +1633,9 @@
               <e type="function" args="2">concat</e>
               <e type="function" args="1">Play</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="1">rfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">msj</e>
               <e type="operand">msj</e>
@@ -1711,8 +1751,9 @@
               <e type="operator" args="2">:</e>
               <e type="operand" style="string"></e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">stardate</e>
               <e type="operand">energy</e>
               <e type="operand">torpedoes</e>
@@ -1729,8 +1770,9 @@
               <e type="operand">13</e>
               <e type="operand">1</e>
               <e type="function" args="15">mat</e>
-              <e type="operand">data</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">condition</e>
               <e type="operand">1</e>
               <e type="function" args="2">el</e>
@@ -1748,18 +1790,21 @@
       <region top="9288" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>LRS</p>
+            <content>
+              <p>LRS</p>
+            </content>
           </title>
         </area>
-        <region left="90" top="9306" width="391" height="869" color="#000000" fontSize="10">
+        <region left="90" top="9306" width="422" height="869" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">gal</e>
               <e type="operand">ss</e>
               <e type="function" args="2">lrs</e>
               <e type="operand">dat</e>
-              <e type="operand">data</e>
-              <e type="function" args="1">rfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">stardate</e>
               <e type="operand">dat</e>
@@ -1908,8 +1953,9 @@
               <e type="operand">13</e>
               <e type="operand">1</e>
               <e type="function" args="15">mat</e>
-              <e type="operand">data</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">knownGalaxy</e>
               <e type="operand">9</e>
               <e type="operand">1</e>
@@ -1955,7 +2001,9 @@
       <region top="10296" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>SHIELDS</p>
+            <content>
+              <p>SHIELDS</p>
+            </content>
           </title>
         </area>
         <region left="108" top="10341" width="928" height="492" color="#000000" fontSize="10">
@@ -2001,8 +2049,9 @@
               <e type="operator" args="2">:</e>
               <e type="function" args="3">if</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">condition</e>
               <e type="operand">current_sector</e>
               <e type="operand">ent_position</e>
@@ -2038,8 +2087,9 @@
               <e type="operand">13</e>
               <e type="operand">1</e>
               <e type="function" args="15">mat</e>
-              <e type="operand">data</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">condition</e>
               <e type="operand">1</e>
               <e type="function" args="2">el</e>
@@ -2057,7 +2107,9 @@
       <region top="10872" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>PHASERS</p>
+            <content>
+              <p>PHASERS</p>
+            </content>
           </title>
         </area>
         <region left="108" top="10935" width="1157" height="2534" color="#000000" fontSize="10">
@@ -2143,8 +2195,9 @@
               <e type="operand">1</e>
               <e type="function" args="16">line</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="1">rfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">power</e>
               <e type="operand">inp</e>
@@ -2374,8 +2427,9 @@
               <e type="operand">13</e>
               <e type="operand">1</e>
               <e type="function" args="15">mat</e>
-              <e type="operand">data</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">9</e>
               <e type="operand">1</e>
               <e type="function" args="11">line</e>
@@ -2509,8 +2563,9 @@
               <e type="operand">13</e>
               <e type="operand">1</e>
               <e type="function" args="15">mat</e>
-              <e type="operand">data</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">klingons</e>
               <e type="operand">0</e>
               <e type="operator" args="2">≡</e>
@@ -2527,8 +2582,9 @@
               <e type="operand" style="string"></e>
               <e type="function" args="3">if</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">condition</e>
               <e type="operand">current_sector</e>
               <e type="operand">epos</e>
@@ -2551,7 +2607,9 @@
       <region top="13815" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>PHOTONTORPEDOES</p>
+            <content>
+              <p>PHOTONTORPEDOES</p>
+            </content>
           </title>
         </area>
         <region left="27" top="13851" width="1201" height="2179" color="#000000" fontSize="10">
@@ -2564,8 +2622,9 @@
               <e type="operand">inp</e>
               <e type="function" args="5">photontorpedoes</e>
               <e type="operand">dat</e>
-              <e type="operand">data</e>
-              <e type="function" args="1">rfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">stardate</e>
               <e type="operand">dat</e>
@@ -2636,8 +2695,9 @@
               <e type="operand">1</e>
               <e type="function" args="16">line</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="1">rfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">torpedoes</e>
               <e type="operand">1</e>
@@ -2648,8 +2708,9 @@
               <e type="function" args="2">stack</e>
               <e type="operator" args="2">:</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">2</e>
               <e type="operand">1</e>
               <e type="function" args="4">line</e>
@@ -3024,8 +3085,9 @@
               <e type="function" args="2">el</e>
               <e type="operator" args="2">:</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">stardate</e>
               <e type="operand">energy</e>
               <e type="operand">torpedoes</e>
@@ -3042,8 +3104,9 @@
               <e type="operand">13</e>
               <e type="operand">1</e>
               <e type="function" args="15">mat</e>
-              <e type="operand">data</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">condition</e>
               <e type="operand">1</e>
               <e type="function" args="2">el</e>
@@ -3054,24 +3117,27 @@
             </input>
           </math>
         </region>
-        <region top="15993" color="#000000">
+        <region top="16074" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="16029" color="#000000">
+      <region top="16110" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>SAVE GAME</p>
+            <content>
+              <p>SAVE GAME</p>
+            </content>
           </title>
         </area>
-        <region left="45" top="16074" width="599" height="99" color="#000000" fontSize="10">
+        <region left="45" top="16155" width="599" height="99" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">inp</e>
               <e type="function" args="1">savegame</e>
               <e type="operand">status</e>
-              <e type="operand">data</e>
-              <e type="function" args="1">rfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">MyGame</e>
               <e type="operand">inp</e>
@@ -3094,17 +3160,19 @@
             </input>
           </math>
         </region>
-        <region top="16263" color="#000000">
+        <region top="16344" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="16299" color="#000000">
+      <region top="16380" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>RESUME GAME</p>
+            <content>
+              <p>RESUME GAME</p>
+            </content>
           </title>
         </area>
-        <region left="27" top="16353" width="425" height="537" color="#000000" fontSize="10">
+        <region left="27" top="16434" width="425" height="537" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">inp</e>
@@ -3116,15 +3184,17 @@
               <e type="operator" args="2">:</e>
               <e type="operand">dat</e>
               <e type="operand">path</e>
-              <e type="operand">MyGame</e>
+              <e type="operand" style="string">MyGame</e>
               <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">dat</e>
-              <e type="operand">data</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">dat</e>
-              <e type="operand">data</e>
-              <e type="function" args="1">rfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">stardate</e>
               <e type="operand">dat</e>
@@ -3213,17 +3283,19 @@
             </input>
           </math>
         </region>
-        <region top="16893" color="#000000">
+        <region top="16974" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="16938" color="#000000">
+      <region top="17019" color="#000000">
         <area collapsed="true">
           <title lang="spa">
-            <p>CHECK COURSE</p>
+            <content>
+              <p>CHECK COURSE</p>
+            </content>
           </title>
         </area>
-        <region left="0" top="16983" width="1174" height="1525" color="#000000" fontSize="10">
+        <region left="0" top="17064" width="1174" height="1525" color="#000000" fontSize="10">
           <math optimize="2">
             <input>
               <e type="operand">CurPos</e>
@@ -3303,8 +3375,9 @@
               <e type="operand">1</e>
               <e type="function" args="16">line</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="1">rfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">Tc</e>
               <e type="operand">NewPos</e>
@@ -3501,8 +3574,9 @@
               <e type="operand">13</e>
               <e type="operand">1</e>
               <e type="function" args="15">mat</e>
-              <e type="operand">data</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">data</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">NewPos</e>
               <e type="operand">StrNewPos</e>
               <e type="operand" style="string"> </e>
@@ -3533,8 +3607,9 @@
               <e type="function" args="7">line</e>
               <e type="function" args="3">for</e>
               <e type="operand">msj</e>
-              <e type="operand">communications</e>
-              <e type="function" args="2">wfile</e>
+              <e type="operand">path</e>
+              <e type="operand" style="string">communications</e>
+              <e type="function" args="3">wfile</e>
               <e type="operand">NewPos</e>
               <e type="operand">15</e>
               <e type="operand">1</e>
@@ -3543,15 +3618,15 @@
             </input>
           </math>
         </region>
-        <region top="18513" color="#000000">
+        <region top="18603" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="18657" color="#000000">
+      <region top="18747" color="#000000">
         <area terminator="true" />
       </region>
     </region>
-    <region left="36" top="18720" width="517" height="533" border="true" color="#ffff80" bgColor="#808080" fontSize="10">
+    <region left="36" top="18810" width="517" height="533" border="true" color="#ffff80" bgColor="#808080" fontSize="10">
       <table id="1" elementsOnDataSizeChange="10,10" focus="0,0;0,0" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
         <inputs>
           <e regions="columns">CheckCourse</e>
@@ -3592,7 +3667,7 @@
           <e regions="rows">vfil</e>
         </inputs>
         <regions header="True" lstub="True" units="False,Top" rstub="False" footer="False" footnote="True" caption="False,Bottom">
-          <body rows="1" cols="1" align="Center" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#FFFF80,#FFFF80" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 14.25pt" numbers="Default,2,15,False,0,True,6" highlighters="#000000,#80FF00,#000000,#80FF00" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <body rows="1" cols="1" align="Near" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#FFFF80,#FFFF80" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 14.25pt" numbers="Default,2,15,False,0,True,6" highlighters="#000000,#80FF00,#000000,#80FF00" ellipsisFont="Courier New, 19px" ellipsisSize="0">
             <tr>
               <td>
 __________________           __
@@ -3624,22 +3699,22 @@ Please, type "HLP" for HELP              </td>
               <td>#</td>
             </tr>
           </units>
-          <header input="hcol" rows="1" cols="1" align="Center" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <header input="" rows="1" cols="1" align="Near" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </header>
-          <lstub input="vfil" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <lstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </lstub>
-          <rstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <rstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </rstub>
-          <footer input="" rows="1" cols="1" align="Near" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <footer input="" rows="1" cols="1" align="Near" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
@@ -3653,7 +3728,7 @@ Please, type "HLP" for HELP              </td>
         </input>
       </table>
     </region>
-    <region left="558" top="18720" width="531" height="267" border="true" color="#000000" fontSize="10" showInputData="false">
+    <region left="558" top="18810" width="531" height="267" border="true" color="#000000" fontSize="10" showInputData="false">
       <table id="2" elementsOnDataSizeChange="10,10" focus="0,0;1,6" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
         <inputs>
           <e regions="columns">CheckCourse</e>
@@ -3698,11 +3773,11 @@ Please, type "HLP" for HELP              </td>
           <body rows="7" cols="2" align="Near" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Columns" styleEffects="None" font="Microsoft Sans Serif, 15.75pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Microsoft Sans Serif, 21px" ellipsisSize="0">
             <tr>
               <td>STARDATE</td>
-              <td>1363</td>
+              <td>1307</td>
             </tr>
             <tr>
               <td>SECTOR</td>
-              <td>3 1</td>
+              <td>6 4</td>
             </tr>
             <tr>
               <td>CONDITION</td>
@@ -3722,7 +3797,7 @@ Please, type "HLP" for HELP              </td>
             </tr>
             <tr>
               <td>KLINGONS LEFT</td>
-              <td>37</td>
+              <td>34</td>
             </tr>
           </body>
           <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
@@ -3755,8 +3830,9 @@ Please, type "HLP" for HELP              </td>
         </regions>
         <input>
           <e type="operand">dat</e>
-          <e type="operand">data</e>
-          <e type="function" args="1">rfile</e>
+          <e type="operand">path</e>
+          <e type="operand" style="string">data</e>
+          <e type="function" args="2">rfile</e>
           <e type="operator" args="2">:</e>
           <e type="operand" style="string">STARDATE</e>
           <e type="operand">dat</e>
@@ -3796,7 +3872,7 @@ Please, type "HLP" for HELP              </td>
         </input>
       </table>
     </region>
-    <region left="558" top="18990" width="286" height="66" color="#000000" fontSize="10" showInputData="false">
+    <region left="558" top="19080" width="286" height="66" color="#000000" fontSize="10" showInputData="false">
       <table id="3" elementsOnDataSizeChange="10,10" focus="0,0;0,0" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
         <inputs>
           <e regions="columns">CheckCourse</e>
@@ -3872,8 +3948,9 @@ Please, type "HLP" for HELP              </td>
           <caption align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="Black" bgColor="White" font="Courier New, 10pt" text="COMMUNICATIONS" />
         </regions>
         <input>
-          <e type="operand">communications</e>
-          <e type="function" args="1">rfile</e>
+          <e type="operand">path</e>
+          <e type="operand" style="string">communications</e>
+          <e type="function" args="2">rfile</e>
         </input>
       </table>
     </region>
