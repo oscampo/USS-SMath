@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?application progid="SMath Studio Desktop" version="0.99.7822.147"?>
+<?application progid="SMath Studio Desktop" version="0.99.7921.69"?>
 <worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
-  <settings ppi="120">
+  <settings ppi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>195</revision>
+      <revision>198</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -25,15 +25,15 @@
       <backgrounds />
     </pageModel>
     <dependencies>
-      <assembly name="SMath Studio Desktop" version="0.99.7822.147" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
-      <assembly name="Mathcad File Access Functions" version="1.0.7850.28384" guid="02a1c2c5-590e-46bb-bcf6-c87856a8b14b" />
-      <assembly name="MathRegion" version="1.11.7822.147" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
-      <assembly name="Custom Functions" version="1.1.7840.30466" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
-      <assembly name="SpecialFunctions" version="1.12.7822.147" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
-      <assembly name="TextRegion" version="1.11.7822.147" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
-      <assembly name="AreaRegion" version="1.11.7822.147" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
+      <assembly name="SMath Studio Desktop" version="0.99.7921.69" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.7921.69" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.8051.30522" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
+      <assembly name="SpecialFunctions" version="1.12.7921.69" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="TextRegion" version="1.11.7921.69" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="AreaRegion" version="1.11.7921.69" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
       <assembly name="Table Region" version="0.3.7806.4448" guid="51fec712-ec75-4551-a13e-478d375ae8d6" />
       <assembly name="Statistical Tools" version="1.0.6824.32561" guid="76f6e9f5-ac86-4ffb-9e4d-284c8daecaf9" />
+      <assembly name="Mathcad Toolbox" version="0.3.8020.27889" guid="ddc09821-49f1-4c21-a829-6499de0a8f06" />
     </dependencies>
   </settings>
   <regions type="content">
@@ -45,7 +45,7 @@
           </content>
         </title>
       </area>
-      <region left="126" top="36" width="366" height="26" color="#000000" fontSize="10">
+      <region left="126" top="36" width="614" height="26" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">path</e>
@@ -54,7 +54,7 @@
             <e type="operator" args="2">:</e>
           </input>
           <result action="numeric">
-            <e type="operand" style="string">C:\USS-SMath\</e>
+            <e type="operand" style="string">D:\Users\oicampo\Documents\GitHub\USS-SMath\</e>
           </result>
         </math>
       </region>
@@ -3671,7 +3671,7 @@
             <tr>
               <td>
 __________________           __
-\_USS SMath_______|)____.---'--`---.____
+\_USS_SMath_______|)____.---'--`---.____
               ||    \----.________.----/
               ||     / /    `--'
             __||____/ /_
@@ -3694,33 +3694,33 @@ type your orders on COMMAND() prompt.
 Please, type "HLP" for HELP              </td>
             </tr>
           </body>
-          <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
+          <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.3333321px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </units>
-          <header input="" rows="1" cols="1" align="Near" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
+          <header input="hcol" rows="1" cols="1" align="Near" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </header>
-          <lstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
+          <lstub input="vfil" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </lstub>
-          <rstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
+          <rstub input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </rstub>
-          <footer input="" rows="1" cols="1" align="Near" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
+          <footer input="" rows="1" cols="1" align="Near" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </footer>
           <footnote align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="#80FF00" bgColor="Black" font="Courier New, 11px" text="USS-SMath (c) Oscar Campo V1.0" />
-          <caption align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="Black" bgColor="White" font="Courier New, 10pt" text="" />
+          <caption align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="Black" bgColor="White" font="Courier New, 13.333333px" text="" />
         </regions>
         <input>
           <e type="operand" style="string">start</e>
@@ -3728,7 +3728,7 @@ Please, type "HLP" for HELP              </td>
         </input>
       </table>
     </region>
-    <region left="558" top="18810" width="531" height="267" border="true" color="#000000" fontSize="10" showInputData="false">
+    <region left="558" top="18810" width="531" height="263" border="true" color="#000000" fontSize="10" showInputData="false">
       <table id="2" elementsOnDataSizeChange="10,10" focus="0,0;1,6" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
         <inputs>
           <e regions="columns">CheckCourse</e>
@@ -3773,15 +3773,15 @@ Please, type "HLP" for HELP              </td>
           <body rows="7" cols="2" align="Near" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Columns" styleEffects="None" font="Microsoft Sans Serif, 15.75pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Microsoft Sans Serif, 21px" ellipsisSize="0">
             <tr>
               <td>STARDATE</td>
-              <td>1307</td>
+              <td>1023</td>
             </tr>
             <tr>
               <td>SECTOR</td>
-              <td>6 4</td>
+              <td>1 7</td>
             </tr>
             <tr>
               <td>CONDITION</td>
-              <td>RED</td>
+              <td>GREEN</td>
             </tr>
             <tr>
               <td>ENERGY</td>
@@ -3797,7 +3797,7 @@ Please, type "HLP" for HELP              </td>
             </tr>
             <tr>
               <td>KLINGONS LEFT</td>
-              <td>34</td>
+              <td>35</td>
             </tr>
           </body>
           <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
@@ -3872,7 +3872,7 @@ Please, type "HLP" for HELP              </td>
         </input>
       </table>
     </region>
-    <region left="558" top="19080" width="286" height="66" color="#000000" fontSize="10" showInputData="false">
+    <region left="558" top="19080" width="286" height="62" color="#000000" fontSize="10" showInputData="false">
       <table id="3" elementsOnDataSizeChange="10,10" focus="0,0;0,0" bgColor="White" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
         <inputs>
           <e regions="columns">CheckCourse</e>
