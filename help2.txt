@@ -1,0 +1,56 @@
+LRS 
+-------------------------
+Long Range Sensors Maps 
+ship's position and the 
+objects in circundant
+sectors.
+
+Conventions:
+ΞO  : Enterprise
+*** : Galaxy Border
+B	: Number of Star Bases
+	  in the sector
+S	: Number of stars
+	  in the sector
+K	: Number of Klingons
+      in the sector
+
+Case 1:
+
+BSK  BSK BSK
+BSK  ΞO  BSK
+BSK  BSK BSK
+
+Case 2:
+************
+BSK  ΞO  BSK
+BSK  BSK BSK
+
+Case 3:
+BSK  BSK BSK
+BSK  ΞO  BSK
+*************
+
+Case 4:
+*
+*BSK BSK
+*ΞO  BSK
+*BSK BSK
+*
+*
+
+Case 5:
+		  *
+  BSK  BSK*
+  BSK  ΞO *
+  BSK  BSK*
+          *
+		  
+Case 6:
+*************
+*ΞO  BSK
+*BSK BSK
+*
+*
+
+etc.

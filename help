@@ -3,7 +3,8 @@
 'NAV QQ SS W'     Navigate to Quadrant QQ
                   Sector SS at Warp W
 'SRS'             Short Range Scan
-'LRS'             Long Range Scan
+'LRS'             Long Range Scan. (Type
+				  'MORE' for extra help)				
 'PHA PP'          Shot Phasers with PP
                   energy units
 'TOR N SS'        Shot N Photon Torpedoes
