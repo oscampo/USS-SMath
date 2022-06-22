@@ -1,17 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?application progid="SMath Studio Desktop" version="0.99.7204.3854"?>
+<?application progid="SMath Studio Desktop" version="1.0.8206.25180"?>
 <worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
   <settings ppi="96">
     <identity>
       <id>c1941877-c192-45d9-b6a0-95a3afc8d095</id>
-      <revision>30</revision>
+      <revision>31</revision>
     </identity>
+    <metadata lang="eng">
+      <author>Oscar Campo</author>
+    </metadata>
     <calculation>
       <precision>4</precision>
       <exponentialThreshold>5</exponentialThreshold>
       <trailingZeros>false</trailingZeros>
       <significantDigitsMode>false</significantDigitsMode>
       <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
       <fractions>decimal</fractions>
     </calculation>
     <pageModel active="false" viewMode="1" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
@@ -22,36 +26,39 @@
       <backgrounds />
     </pageModel>
     <dependencies>
-      <assembly name="SMath Studio Desktop" version="0.99.7204.3854" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
-      <assembly name="Mathcad File Access Functions" version="1.0.6983.32721" guid="02a1c2c5-590e-46bb-bcf6-c87856a8b14b" />
-      <assembly name="Math Region" version="0.99.7204.3854" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
-      <assembly name="Custom Functions" version="1.1.7200.16172" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
-      <assembly name="SpecialFunctions" version="1.12.7204.3854" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
-      <assembly name="Image Region" version="2.99.7100.21996" guid="63ddaef8-9a56-4ff6-938e-d590b638bf99" />
+      <assembly name="SMath Studio Desktop" version="1.0.8206.25180" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8206.25180" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.8051.30522" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
+      <assembly name="SpecialFunctions" version="1.12.8206.25180" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="AreaRegion" version="1.11.8206.25180" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
+      <assembly name="Image Region" version="2.99.7818.2866" guid="63ddaef8-9a56-4ff6-938e-d590b638bf99" />
       <assembly name="Statistical Tools" version="1.0.6824.32561" guid="76f6e9f5-ac86-4ffb-9e4d-284c8daecaf9" />
+      <assembly name="Mathcad Toolbox" version="0.4.8149.37125" guid="ddc09821-49f1-4c21-a829-6499de0a8f06" />
     </dependencies>
   </settings>
   <regions type="content">
-    <region top="27">
-      <area collapsed="true">
+    <region top="27" color="#000000">
+      <area collapsed="false">
         <title lang="spa">
-          <p></p>
+          <content>
+            <p></p>
+          </content>
         </title>
       </area>
-      <region left="45" top="45" width="662" height="26" fontSize="10">
+      <region left="45" top="45" width="630" height="26" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">path</e>
-            <e type="operand" style="string"></e>
+            <e type="operand">0</e>
             <e type="function" args="1">DocumentDirectory</e>
             <e type="operator" args="2">:</e>
           </input>
           <result action="numeric">
-            <e type="operand" style="string">D:\Users\oicampo\Documents\GitHub\USS-SMath\NewUI\</e>
+            <e type="operand" style="string">C:\Users\user\Documents\GitHub\USS-SMath\NewUI\</e>
           </result>
         </math>
       </region>
-      <region left="45" top="81" width="225" height="26" fontSize="10">
+      <region left="45" top="81" width="225" height="26" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">starfield</e>
@@ -62,7 +69,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="117" width="204" height="32" fontSize="10">
+      <region left="45" top="117" width="204" height="32" color="#000000" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">R</e>
@@ -77,7 +84,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="153" width="48" height="24" fontSize="10">
+      <region left="45" top="153" width="48" height="24" color="#000000" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">G</e>
@@ -86,7 +93,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="189" width="48" height="24" fontSize="10">
+      <region left="45" top="189" width="48" height="24" color="#000000" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">B</e>
@@ -95,8 +102,8 @@
           </input>
         </math>
       </region>
-      <region left="45" top="234" width="363" height="28" fontSize="10">
-        <math>
+      <region left="45" top="234" width="363" height="28" color="#000000" fontSize="10">
+        <math evaluate="false">
           <input>
             <e type="operand">ent</e>
             <e type="operand">path</e>
@@ -107,7 +114,19 @@
           </input>
         </math>
       </region>
-      <region left="45" top="270" width="190" height="32" fontSize="10">
+      <region left="468" top="234" width="447" height="31" color="#000000" fontSize="12">
+        <math optimize="2" matrixOptions="0,0,3,1">
+          <input>
+            <e type="operand">ent</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">enterprise.bmp</e>
+            <e type="function" args="2">concat</e>
+            <e type="function" args="1">image2rgb</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="45" top="270" width="190" height="32" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">ent</e>
@@ -124,8 +143,8 @@
           </input>
         </math>
       </region>
-      <region left="45" top="315" width="339" height="28" fontSize="10">
-        <math>
+      <region left="45" top="315" width="335" height="28" color="#000000" fontSize="10">
+        <math evaluate="false">
           <input>
             <e type="operand">kli</e>
             <e type="operand">path</e>
@@ -136,8 +155,20 @@
           </input>
         </math>
       </region>
-      <region left="45" top="342" width="190" height="32" fontSize="10">
+      <region left="441" top="315" width="418" height="31" color="#000000" fontSize="12">
         <math>
+          <input>
+            <e type="operand">kli</e>
+            <e type="operand">path</e>
+            <e type="operand" style="string">klingon.bmp</e>
+            <e type="function" args="2">concat</e>
+            <e type="function" args="1">image2rgb</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="45" top="342" width="190" height="32" color="#000000" fontSize="10">
+        <math evaluate="false">
           <input>
             <e type="operand">kli</e>
             <e type="operand">kli</e>
@@ -153,7 +184,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="414" width="168" height="85" fontSize="10">
+      <region left="45" top="414" width="168" height="85" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">i</e>
@@ -184,7 +215,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="558" width="143" height="118" fontSize="10">
+      <region left="45" top="558" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_1</e>
@@ -221,7 +252,7 @@
           </input>
         </math>
       </region>
-      <region left="207" top="558" width="143" height="118" fontSize="10">
+      <region left="207" top="558" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_2</e>
@@ -258,7 +289,7 @@
           </input>
         </math>
       </region>
-      <region left="360" top="558" width="143" height="118" fontSize="10">
+      <region left="360" top="558" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_3</e>
@@ -295,7 +326,7 @@
           </input>
         </math>
       </region>
-      <region left="522" top="558" width="153" height="26" fontSize="10">
+      <region left="522" top="558" width="153" height="26" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">hesp</e>
@@ -306,7 +337,7 @@
           </input>
         </math>
       </region>
-      <region left="522" top="621" width="153" height="26" fontSize="10">
+      <region left="522" top="621" width="153" height="26" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">vesp</e>
@@ -317,7 +348,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="693" width="143" height="118" fontSize="10">
+      <region left="45" top="693" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_4</e>
@@ -354,7 +385,7 @@
           </input>
         </math>
       </region>
-      <region left="207" top="693" width="143" height="118" fontSize="10">
+      <region left="207" top="693" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_5</e>
@@ -391,7 +422,7 @@
           </input>
         </math>
       </region>
-      <region left="360" top="693" width="143" height="118" fontSize="10">
+      <region left="360" top="693" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_6</e>
@@ -428,7 +459,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="819" width="143" height="118" fontSize="10">
+      <region left="45" top="819" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_7</e>
@@ -465,7 +496,7 @@
           </input>
         </math>
       </region>
-      <region left="207" top="819" width="143" height="118" fontSize="10">
+      <region left="207" top="819" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_8</e>
@@ -502,7 +533,7 @@
           </input>
         </math>
       </region>
-      <region left="360" top="819" width="143" height="118" fontSize="10">
+      <region left="360" top="819" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_9</e>
@@ -539,7 +570,7 @@
           </input>
         </math>
       </region>
-      <region left="504" top="819" width="143" height="118" fontSize="10">
+      <region left="504" top="819" width="143" height="118" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">_0</e>
@@ -576,7 +607,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="999" width="1097" height="26" fontSize="10">
+      <region left="45" top="999" width="1097" height="26" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">hcol</e>
@@ -609,7 +640,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="1044" width="1177" height="28" fontSize="10">
+      <region left="45" top="1044" width="1177" height="28" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">vfil</e>
@@ -645,7 +676,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="1116" width="372" height="94" fontSize="10">
+      <region left="45" top="1116" width="364" height="95" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">bmp1</e>
@@ -654,16 +685,16 @@
             <e type="operand">bmp1</e>
             <e type="operand">bmp2</e>
             <e type="operator" args="2">≥</e>
-            <e type="operand">bmp2</e>
+            <e type="operand">bmp</e>
             <e type="operand">bmp1</e>
             <e type="operator" args="2">:</e>
-            <e type="operand">bmp2</e>
+            <e type="operand">bmp</e>
             <e type="operand">bmp1</e>
             <e type="operand">bmp2</e>
             <e type="operator" args="2">+</e>
             <e type="operator" args="2">:</e>
             <e type="function" args="3">if</e>
-            <e type="operand">bmp2</e>
+            <e type="operand">bmp</e>
             <e type="operand">2</e>
             <e type="operand">1</e>
             <e type="function" args="4">line</e>
@@ -671,7 +702,38 @@
           </input>
         </math>
       </region>
-      <region left="36" top="1350" width="919" height="277" fontSize="10">
+      <region left="1278" top="1467" width="323" height="37" color="#000000" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">kli</e>
+            <e type="operand">i</e>
+            <e type="operand">j</e>
+            <e type="function" args="3">el</e>
+            <e type="operand">G</e>
+            <e type="operand">i</e>
+            <e type="operand">ki</e>
+            <e type="operand">1</e>
+            <e type="operator" args="2">-</e>
+            <e type="bracket">(</e>
+            <e type="operand">26</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">+</e>
+            <e type="bracket">(</e>
+            <e type="operand">j</e>
+            <e type="operand">kj</e>
+            <e type="operand">1</e>
+            <e type="operator" args="2">-</e>
+            <e type="bracket">(</e>
+            <e type="operand">26</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">+</e>
+            <e type="bracket">(</e>
+            <e type="function" args="3">el</e>
+            <e type="operator" args="2">+</e>
+          </input>
+        </math>
+      </region>
+      <region left="36" top="1521" width="942" height="305" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">ei</e>
@@ -708,6 +770,9 @@
             <e type="bracket">(</e>
             <e type="function" args="3">el</e>
             <e type="operand">ent</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
+            <e type="bracket">(</e>
             <e type="operand">i</e>
             <e type="operand">j</e>
             <e type="function" args="3">el</e>
@@ -754,6 +819,9 @@
             <e type="bracket">(</e>
             <e type="function" args="3">el</e>
             <e type="operand">ent</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="bracket">(</e>
             <e type="operand">i</e>
             <e type="operand">j</e>
             <e type="function" args="3">el</e>
@@ -800,6 +868,9 @@
             <e type="bracket">(</e>
             <e type="function" args="3">el</e>
             <e type="operand">ent</e>
+            <e type="operand">3</e>
+            <e type="function" args="2">el</e>
+            <e type="bracket">(</e>
             <e type="operand">i</e>
             <e type="operand">j</e>
             <e type="function" args="3">el</e>
@@ -846,6 +917,9 @@
             <e type="bracket">(</e>
             <e type="function" args="3">el</e>
             <e type="operand">kli</e>
+            <e type="operand">2</e>
+            <e type="function" args="2">el</e>
+            <e type="bracket">(</e>
             <e type="operand">i</e>
             <e type="operand">j</e>
             <e type="function" args="3">el</e>
@@ -926,50 +1000,27 @@
           </input>
         </math>
       </region>
-      <region left="1278" top="1467" width="323" height="37" fontSize="10">
-        <math>
-          <input>
-            <e type="operand">kli</e>
-            <e type="operand">i</e>
-            <e type="operand">j</e>
-            <e type="function" args="3">el</e>
-            <e type="operand">G</e>
-            <e type="operand">i</e>
-            <e type="operand">ki</e>
-            <e type="operand">1</e>
-            <e type="operator" args="2">-</e>
-            <e type="bracket">(</e>
-            <e type="operand">26</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="2">+</e>
-            <e type="bracket">(</e>
-            <e type="operand">j</e>
-            <e type="operand">kj</e>
-            <e type="operand">1</e>
-            <e type="operator" args="2">-</e>
-            <e type="bracket">(</e>
-            <e type="operand">26</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="2">+</e>
-            <e type="bracket">(</e>
-            <e type="function" args="3">el</e>
-            <e type="operator" args="2">+</e>
-          </input>
-        </math>
-      </region>
-      <region top="1701">
+      <region top="2007" color="#000000">
         <area terminator="true" />
       </region>
     </region>
-    <region left="54" top="1773" width="433" height="435" fontSize="10">
+    <region left="54" top="2079" width="433" height="435" color="#000000" fontSize="10">
       <image>
-        <imagefile filename="cwoqh.png" lenght="5727" width="423" height="427" option="border=true;" dataRenderXmlLength="0" renderExt=".png" OLDwidht="212" OLDheight="214" select_rotation="0°">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</imagefile>
+        <imagefile filename="qmm0c.png" lenght="6439" width="423" height="427" option="border=true;" dataRenderXmlLength="0" renderExt=".png" OLDwidht="212" OLDheight="214" select_rotation="0°">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</imagefile>
         <input>
-          <e type="operand">5</e>
+          <e type="operand">1</e>
           <e type="operand">5</e>
           <e type="operand">6</e>
           <e type="operand">3</e>
           <e type="function" args="4">screen</e>
+        </input>
+      </image>
+    </region>
+    <region left="711" top="2214" width="610" height="127" color="#000000" fontSize="12">
+      <image>
+        <imagefile filename="jkdcg.png" lenght="1425" width="600" height="119" option="border=true;" dataRenderXmlLength="0" renderExt=".png" OLDwidht="26" OLDheight="26" select_rotation="0°">iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUmSURBVEhLvVb5T5NnHB8qJCBny6XRjSFSKpVTjnKUIta2QEHaTtoC5WhLKZeFunLJMWEqoIC6Q2ecS5xxcSEawzyyJbKYHf/VZ9/vI3UUX5k/rcknzfN93+fzeb7n835EP/xPkDT+J+Li4vFpZhZOqKtRotZAcew4kpNTJN/dgqRxVxw89DHyistRa2yBzeUXMJrbUazW4ki2EtHRMVL73jG8F5GRUZCnpKOiVo8muwcO3wT6p1YEus7NwewchL7ZhoysHMTsj925P2yxK1jEdLYLJkcfHP1T8E1cw8DUqkD/5Aq6Rxdgah+AqdUFRW7Bzv1hi/fi0CdHoDndjEZHP5zDs/COL6Fv8hp6zi8L9I5fJeGrcJ2/BHP3COpMNuTml2znCCeUQmJiEgrLNGjpGEDb4Ax6x1hkBYPTqxi//I2Af+4G+shDH9k7/Rdh7RlFjcGM1NQ0REZFMY80OWPP3r2IiYmBMjePTtgKu28KAxdWhQj/Ty7ewt2H6wKXbt7D0PQavCTWT6FksUZbL4pLK5Ccksp80iIMFlEoj6HO2AybJwDP2LIg4ZOzyHcP1rH5x1/Y/PNvPHzyHAvX75G3y8IrL4WRQ9xobUfBiTLmkxZhJCTJoKkzwE4ivcErRHAN7uAyxi59jVv3f8bjF6/w8OmmwPqzV3jw+BdML98Wh/FSzvomKH/+L6gSW5lPWoSRmCSHVlcPl3+O8rEmks9eBeZv4qsfHgmhRxu/C6w/28T99Q2RLy539oircXjmBnnVwXzSIoz9sXHIKzwBW88wXKPzVFGXRVgYsyt38f1PT7Hx62ts/PaavHmO5W9/FCXPzz3BRfRQufcGLqKq1sB80iKMiIgIatJI5BeV4HSzA2c9QQzNrME9xmFZwczVO3jy/CWevHiJ1TsPhAfdgSXhEeen/qwb1bU6yN+MJmmREFgsNi4O+aUaUbKhgvARhqav48LSbYHRize3qpEqj/LjoAqtMVop/DJxWOKSFtiJA4czUKWj6uubFCF80zM0EbZGUCikLNJBvaY3O6FQFW3nCCd8H6Kjo3E4IwvahlZYXefR5Z+HlxqXPRgkz8RUCHyJtoFpGKzdyC0oRUJCwnaOcMLdEEUdnpZ+AFqjBc1tPti8Ywgs3ELw8h1RLE1k42GrOJYnrpEd+8MWuyJizx4hlihLgaqwFIYzDrR0jdD8G4DR0olK7Wkkpx0Uk3svTZUd+8MWHwy5PJnCU4LqehuKtU1QFVfhk4xMyXe3IGkMQyz1UxIRx9NwDdni4hOQlZMHbaMDap0FysJypKSlv33OlRZL4ZOnHoBM/gHlzSjgPmpogbpG99amUBXC6uyHOzCPvvFFtPuCqDxZ//Y5D9Kikgo02VzQmyxsCyfdDo4ze1NaoYGuyYaSGqOwqwrLRD5qaTyZHW4S9KHBbEfNKSMqT5loRspF0air62D3BnHG1s37pEUY7L5MLkersxd294gI0aFMJUorT+J4QTFNdhVMnzlRb3XSR0oNspW50OopX0VqFJVrqFjs8HxOF2Gbm/mkRRh8YaWkpmJ8bgnDU4vQmtpQXtsIpSofMpmc4p+OZjqt3uJEZk6++CjJylag+lQjDJYOWLuGaKiuocXew3zSIow3fZOOsdkrGLmwCB3NuzJ1JeK3GpGFmlq7ibQTR5T/fiMcJbGqugac6TyH4dkbFF4X298VCCHkkX9iAcOTV1CtNwuRffv2iedcTQZKdEOLHdnUpKF90XRhHs3JFX3mozvJ0ubBP0alFmNIxNqdAAAAAElFTkSuQmCC</imagefile>
+        <input>
+          <e type="operand">ent</e>
         </input>
       </image>
     </region>
