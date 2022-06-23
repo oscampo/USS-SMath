@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>216</revision>
+      <revision>221</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -49,7 +49,7 @@
           </content>
         </title>
       </area>
-      <region left="126" top="36" width="590" height="26" color="#000000" fontSize="10">
+      <region left="126" top="36" width="534" height="26" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">path</e>
@@ -58,7 +58,7 @@
             <e type="operator" args="2">:</e>
           </input>
           <result action="numeric">
-            <e type="operand" style="string">C:\Users\user\Documents\GitHub\USS-SMath\</e>
+            <e type="operand" style="string">C:\Users\user\Downloads\USS-SMath\</e>
           </result>
         </math>
       </region>
@@ -124,7 +124,7 @@
           </input>
         </math>
       </region>
-      <region left="135" top="315" width="1041" height="3928" color="#000000" fontSize="10">
+      <region left="135" top="315" width="1041" height="3948" color="#000000" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">input</e>
@@ -199,23 +199,22 @@
             <e type="operand">i</e>
             <e type="function" args="2">el</e>
             <e type="operand">x</e>
-            <e type="operand">100</e>
-            <e type="operator" args="2">*</e>
+            <e type="function" args="1">num2str</e>
             <e type="operand">y</e>
-            <e type="operand">10</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="2">+</e>
+            <e type="function" args="1">num2str</e>
             <e type="operand">z</e>
-            <e type="operator" args="2">+</e>
+            <e type="function" args="1">num2str</e>
+            <e type="function" args="3">concat</e>
             <e type="operator" args="2">:</e>
+            <e type="operand" style="string">el(galaxy,i):x*100+y*10+z</e>
             <e type="operand">klingons</e>
             <e type="operand">klingons</e>
             <e type="operand">x</e>
             <e type="operator" args="2">+</e>
             <e type="operator" args="2">:</e>
-            <e type="operand">7</e>
+            <e type="operand">8</e>
             <e type="operand">1</e>
-            <e type="function" args="9">line</e>
+            <e type="function" args="10">line</e>
             <e type="function" args="3">for</e>
             <e type="operand" style="string">Choose the starting sector and position for the Enterprise</e>
             <e type="operand">sector</e>
@@ -715,7 +714,7 @@
             <e type="function" args="3">wfile</e>
             <e type="operand">knownGalaxy</e>
             <e type="operand">path</e>
-            <e type="operand" style="string">FederationLogo.txt</e>
+            <e type="operand" style="string">FederationLogo</e>
             <e type="function" args="2">rfile</e>
             <e type="operator" args="2">:</e>
             <e type="operand">stardate</e>
@@ -801,7 +800,7 @@
             <e type="operand" style="string">communications</e>
             <e type="function" args="3">wfile</e>
             <e type="operand">path</e>
-            <e type="operand" style="string">FederationLogo.txt</e>
+            <e type="operand" style="string">FederationLogo</e>
             <e type="function" args="2">rfile</e>
             <e type="operand">3</e>
             <e type="operand">1</e>
@@ -811,7 +810,7 @@
             <e type="operator" args="2">:</e>
             <e type="operand">knownGalaxy</e>
             <e type="operand">path</e>
-            <e type="operand" style="string">FederationLogo.txt</e>
+            <e type="operand" style="string">FederationLogo</e>
             <e type="function" args="2">rfile</e>
             <e type="operator" args="2">:</e>
             <e type="operand">msj</e>
@@ -865,37 +864,31 @@
             </content>
           </title>
         </area>
-        <region left="63" top="4410" width="390" height="159" color="#000000" fontSize="10">
+        <region left="63" top="4410" width="411" height="132" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">sct</e>
               <e type="function" args="1">decode</e>
               <e type="operand">klin</e>
               <e type="operand">sct</e>
-              <e type="operand">100</e>
-              <e type="operator" args="2">/</e>
-              <e type="function" args="1">trunc</e>
+              <e type="operand">1</e>
+              <e type="operand">1</e>
+              <e type="function" args="3">substr</e>
+              <e type="function" args="1">str2num</e>
               <e type="operator" args="2">:</e>
               <e type="operand">strbases</e>
               <e type="operand">sct</e>
-              <e type="operand">klin</e>
-              <e type="operand">100</e>
-              <e type="operator" args="2">*</e>
-              <e type="operator" args="2">-</e>
-              <e type="operand">10</e>
-              <e type="operator" args="2">/</e>
-              <e type="function" args="1">trunc</e>
+              <e type="operand">2</e>
+              <e type="operand">1</e>
+              <e type="function" args="3">substr</e>
+              <e type="function" args="1">str2num</e>
               <e type="operator" args="2">:</e>
               <e type="operand">strs</e>
               <e type="operand">sct</e>
-              <e type="operand">klin</e>
-              <e type="operand">100</e>
-              <e type="operator" args="2">*</e>
-              <e type="operator" args="2">-</e>
-              <e type="operand">strbases</e>
-              <e type="operand">10</e>
-              <e type="operator" args="2">*</e>
-              <e type="operator" args="2">-</e>
+              <e type="operand">3</e>
+              <e type="operand">1</e>
+              <e type="function" args="3">substr</e>
+              <e type="function" args="1">str2num</e>
               <e type="operator" args="2">:</e>
               <e type="operand">klin</e>
               <e type="operand">strbases</e>
@@ -1066,7 +1059,7 @@
         </region>
       </region>
       <region top="5562" color="#000000">
-        <area collapsed="true">
+        <area collapsed="false">
           <title lang="spa">
             <content>
               <p>SRS</p>
@@ -1242,17 +1235,17 @@
               <e type="operator" args="2">≠</e>
               <e type="operand">this_sector</e>
               <e type="operand">path</e>
-              <e type="operand" style="string">FederationLogo.txt</e>
+              <e type="operand" style="string">FederationLogo</e>
               <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">galaxy</e>
               <e type="operand">path</e>
-              <e type="operand" style="string">FederationLogo.txt</e>
+              <e type="operand" style="string">FederationLogo</e>
               <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">knownGalaxy</e>
               <e type="operand">path</e>
-              <e type="operand" style="string">FederationLogo.txt</e>
+              <e type="operand" style="string">FederationLogo</e>
               <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">3</e>
@@ -1299,7 +1292,7 @@
         </region>
       </region>
       <region top="6687" color="#000000">
-        <area collapsed="true">
+        <area collapsed="false">
           <title lang="spa">
             <content>
               <p>SHAPE / SHOWHELP / POS2COORD</p>
@@ -1445,7 +1438,7 @@
         </region>
       </region>
       <region top="7353" color="#000000">
-        <area collapsed="false">
+        <area collapsed="true">
           <title lang="spa">
             <content>
               <p>NAVIGATE</p>
@@ -1914,14 +1907,14 @@
         </region>
       </region>
       <region top="9567" color="#000000">
-        <area collapsed="true">
+        <area collapsed="false">
           <title lang="spa">
             <content>
               <p>LRS</p>
             </content>
           </title>
         </area>
-        <region left="90" top="9585" width="529" height="989" color="#000000" fontSize="10">
+        <region left="90" top="9585" width="497" height="989" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">gal</e>
@@ -2077,12 +2070,12 @@
               <e type="operator" args="2">≠</e>
               <e type="operand">knownGalaxy</e>
               <e type="operand">path</e>
-              <e type="operand" style="string">FederationLogo.txt</e>
+              <e type="operand" style="string">FederationLogo</e>
               <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">galaxy</e>
               <e type="operand">path</e>
-              <e type="operand" style="string">FederationLogo.txt</e>
+              <e type="operand" style="string">FederationLogo</e>
               <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">2</e>
@@ -2680,7 +2673,7 @@
               <e type="operator" args="2">:</e>
               <e type="operand">knownGalaxy</e>
               <e type="operand">path</e>
-              <e type="operand" style="string">FederationLogo.txt</e>
+              <e type="operand" style="string">FederationLogo</e>
               <e type="function" args="2">rfile</e>
               <e type="operator" args="2">:</e>
               <e type="operand">4</e>
@@ -3862,22 +3855,22 @@ Please, type "HLP" for HELP              </td>
               <td>#</td>
             </tr>
           </units>
-          <header input="hcol" rows="1" cols="1" align="Near" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <header input="hcol" rows="1" cols="1" align="Near" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </header>
-          <lstub input="vfil" rows="1" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <lstub input="vfil" rows="1" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </lstub>
-          <rstub input="" rows="1" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <rstub input="" rows="1" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
           </rstub>
-          <footer input="" rows="1" cols="1" align="Near" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <footer input="" rows="1" cols="1" align="Near" pattern="Fixed,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
             <tr>
               <td>#</td>
             </tr>
@@ -3886,7 +3879,7 @@ Please, type "HLP" for HELP              </td>
           <caption align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="Black" bgColor="White" font="Courier New, 13.3333321px" text="" />
         </regions>
         <input>
-          <e type="operand" style="string">START</e>
+          <e type="operand" style="string">start</e>
           <e type="function" args="1">COMMAND</e>
         </input>
       </table>
@@ -3936,11 +3929,11 @@ Please, type "HLP" for HELP              </td>
           <body rows="7" cols="2" align="Near" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Columns" styleEffects="None" font="LCARS, 15.75pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="LCARS, 21px" ellipsisSize="0">
             <tr>
               <td>STARDATE</td>
-              <td>1010</td>
+              <td>1156</td>
             </tr>
             <tr>
               <td>SECTOR</td>
-              <td>7 3</td>
+              <td>8 5</td>
             </tr>
             <tr>
               <td>CONDITION</td>
@@ -3960,7 +3953,7 @@ Please, type "HLP" for HELP              </td>
             </tr>
             <tr>
               <td>KLINGONS LEFT</td>
-              <td>51</td>
+              <td>35</td>
             </tr>
           </body>
           <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.333333px" ellipsisSize="0">
