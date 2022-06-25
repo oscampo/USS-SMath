@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>0917ff51-166c-4417-8441-0ad4df2b8b06</id>
-      <revision>224</revision>
+      <revision>225</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -36,6 +36,7 @@
       <assembly name="TextRegion" version="1.11.8206.25180" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
       <assembly name="AreaRegion" version="1.11.8206.25180" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
       <assembly name="Table Region" version="0.3.7806.4448" guid="51fec712-ec75-4551-a13e-478d375ae8d6" />
+      <assembly name="Statistical Tools" version="1.0.6824.32561" guid="76f6e9f5-ac86-4ffb-9e4d-284c8daecaf9" />
       <assembly name="Mathcad Toolbox" version="0.4.8149.37125" guid="ddc09821-49f1-4c21-a829-6499de0a8f06" />
     </dependencies>
   </settings>
@@ -3785,10 +3786,9 @@
         <area terminator="true" />
       </region>
     </region>
-    <region left="18" top="19125" width="518" height="292" border="true" color="#ffff80" bgColor="#808080" fontSize="10">
-      <table id="1" elementsOnDataSizeChange="10,10" focus="0,0;7,7" bgColor="Black" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
+    <region left="18" top="19125" width="517" height="533" border="true" color="#ffff80" bgColor="#808080" fontSize="10">
+      <table id="1" elementsOnDataSizeChange="10,10" focus="0,0;0,0" bgColor="Black" borderSize="1,1" borderStyle="Solid,Solid" borderColor="Black,Black" frameBorderSize="1,1,1,1" frameBorderStyle="Solid,Solid,Solid,Solid" frameBorderColor="Black,Black,Black,Black" resizeFrame="5px #0080FF" resizeFrameInner="#000000 alpha:0" resizeFrameOuter="#0A0A0A alpha:130">
         <inputs>
-          <e regions="columns">output</e>
           <e regions="columns">CheckCourse</e>
           <e regions="columns">resume</e>
           <e regions="columns">savegame</e>
@@ -3804,14 +3804,11 @@
           <e regions="columns">init</e>
           <e regions="columns">decode</e>
           <e regions="columns">COMMAND</e>
-          <e regions="columns">knownGalaxy</e>
           <e regions="columns">hcol</e>
-          <e regions="columns">vfil</e>
-          <e regions="rows">output</e>
-          <e regions="rows">sctr</e>
+          <e regions="rows">condition</e>
           <e regions="rows">current_sector</e>
+          <e regions="rows">sctr</e>
           <e regions="rows">galaxy</e>
-          <e regions="rows">dat</e>
           <e regions="rows">CheckCourse</e>
           <e regions="rows">resume</e>
           <e regions="rows">savegame</e>
@@ -3827,93 +3824,34 @@
           <e regions="rows">init</e>
           <e regions="rows">decode</e>
           <e regions="rows">COMMAND</e>
-          <e regions="rows">knownGalaxy</e>
-          <e regions="rows">hcol</e>
           <e regions="rows">vfil</e>
-          <e regions="units">hcol</e>
-          <e regions="units">vfil</e>
         </inputs>
         <regions header="True" lstub="True" units="False,Top" rstub="False" footer="False" footnote="True" caption="False,Bottom">
-          <body rows="8" cols="8" align="Near" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#FFFF80,#FFFF80" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 14.25pt" numbers="Default,2,15,False,0,True,6" highlighters="#000000,#80FF00,#000000,#80FF00" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <body rows="1" cols="1" align="Near" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#FFFF80,#FFFF80" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 14.25pt" numbers="Default,2,15,False,0,True,6" highlighters="#000000,#80FF00,#000000,#80FF00" ellipsisFont="Courier New, 19px" ellipsisSize="0">
             <tr>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> ΞO</td>
-              <td> · </td>
-              <td> · </td>
-            </tr>
-            <tr>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> ☼ </td>
-            </tr>
-            <tr>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-            </tr>
-            <tr>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-            </tr>
-            <tr>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-            </tr>
-            <tr>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td>&lt;Θ&gt;</td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-            </tr>
-            <tr>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-            </tr>
-            <tr>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
-              <td> · </td>
+              <td>
+__________________           __
+\_USS_SMath_______|)____.---'--`---.____
+              ||    \----.________.----/
+              ||     / /    `--'
+            __||____/ /_
+           |___         \
+               `--------'
+
+      Space... the final frontier.
+
+      These are the voyages of the 
+            Starship SMath
+        Its five year mission ...
+   to boldly go where no-one has gone   
+                before
+
+        You are the Captain and 
+  your mission is to destroy all of the    
+        Klingons in the galaxy.
+
+type your orders on COMMAND() prompt.   
+Please, type "HLP" for HELP              </td>
             </tr>
           </body>
           <units input="" rows="1" cols="1" align="Center" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.3333321px" ellipsisSize="0">
@@ -3921,42 +3859,14 @@
               <td>#</td>
             </tr>
           </units>
-          <header input="hcol" rows="1" cols="8" align="Center" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <header input="hcol" rows="1" cols="1" align="Center" pattern="Variable,Variable" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="#80FF00,#80FF00" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
             <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
+              <td>#</td>
             </tr>
           </header>
-          <lstub input="vfil" rows="8" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
+          <lstub input="vfil" rows="1" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
             <tr>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>7</td>
-            </tr>
-            <tr>
-              <td>8</td>
+              <td>#</td>
             </tr>
           </lstub>
           <rstub input="" rows="1" cols="1" align="Center" pattern="Variable,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 19px" ellipsisSize="0">
@@ -3973,7 +3883,7 @@
           <caption align="Near" borderSize="1" borderStyle="Solid" borderColor="Black" padding="3,3" color="Black" bgColor="White" font="Courier New, 13.3333321px" text="" />
         </regions>
         <input>
-          <e type="operand" style="string">srs</e>
+          <e type="operand" style="string">start</e>
           <e type="function" args="1">COMMAND</e>
         </input>
       </table>
@@ -3997,10 +3907,11 @@
           <e regions="columns">decode</e>
           <e regions="columns">COMMAND</e>
           <e regions="columns">hcol</e>
-          <e regions="rows">sctr</e>
-          <e regions="rows">current_sector</e>
-          <e regions="rows">galaxy</e>
           <e regions="rows">dat</e>
+          <e regions="rows">condition</e>
+          <e regions="rows">current_sector</e>
+          <e regions="rows">sctr</e>
+          <e regions="rows">galaxy</e>
           <e regions="rows">CheckCourse</e>
           <e regions="rows">resume</e>
           <e regions="rows">savegame</e>
@@ -4022,15 +3933,15 @@
           <body rows="7" cols="2" align="Near" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Lime,Lime" bgColor="Black,Black" style="Columns" styleEffects="None" font="LCARS, 15.75pt" numbers="Default,2,15,False,0,True,6" highlighters="Black,Lime,Black,Lime" ellipsisFont="LCARS, 21px" ellipsisSize="0">
             <tr>
               <td>STARDATE</td>
-              <td>1485</td>
+              <td>1058</td>
             </tr>
             <tr>
               <td>SECTOR</td>
-              <td>8 8</td>
+              <td>3 8</td>
             </tr>
             <tr>
               <td>CONDITION</td>
-              <td>GREEN</td>
+              <td>DOCKED</td>
             </tr>
             <tr>
               <td>ENERGY</td>
@@ -4046,7 +3957,7 @@
             </tr>
             <tr>
               <td>KLINGONS LEFT</td>
-              <td>37</td>
+              <td>36</td>
             </tr>
           </body>
           <units input="" rows="1" cols="1" align="Center" pattern="Fixed,Fixed" borderSize="1,1" borderStyle="Dot,Dot" borderColor="Black,Black" padding="3,3" color="Black,Black" bgColor="White,White" style="Uniform" styleEffects="None" font="Courier New, 10pt" numbers="Default,2,15,False,0,True,6" highlighters="#0080FF,#FFFFFF,#E1E1E1,#000000" ellipsisFont="Courier New, 13.3333321px" ellipsisSize="0">
@@ -4140,10 +4051,11 @@
           <e regions="columns">decode</e>
           <e regions="columns">COMMAND</e>
           <e regions="columns">hcol</e>
-          <e regions="rows">sctr</e>
-          <e regions="rows">current_sector</e>
-          <e regions="rows">galaxy</e>
           <e regions="rows">dat</e>
+          <e regions="rows">condition</e>
+          <e regions="rows">current_sector</e>
+          <e regions="rows">sctr</e>
+          <e regions="rows">galaxy</e>
           <e regions="rows">CheckCourse</e>
           <e regions="rows">resume</e>
           <e regions="rows">savegame</e>
